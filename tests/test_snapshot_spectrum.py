@@ -85,6 +85,8 @@ int main(void){
  assert(strstr(replies,"[80000000,0,2048,1,1,0]"));
 #if CONFIG_IDF_TARGET_ESP32C61
  assert(strstr(replies,"[4000000,5,2048,1,1,0]"));
+#endif
+#if CONFIG_IDF_TARGET_ESP32C61 || CONFIG_IDF_TARGET_ESP32C6
  assert(strstr(replies,"[80000000,0,256,1,1,1]"));
 #else
  assert(strstr(replies,"[80000000,0,256,1,1,0]"));
@@ -110,7 +112,7 @@ int main(void){
             src = Path(tmp) / 'snapshot.c'
             src.write_text('#include <stdlib.h>\n' + stub + source + check)
             exe = Path(tmp) / 'snapshot'
-            for target in ['ESP32C3', 'ESP32C61']:
+            for target in ['ESP32C3', 'ESP32C61', 'ESP32C6']:
                 with self.subTest(target=target):
                     subprocess.run(['cc', '-std=gnu11', '-O2', '-fsanitize=undefined',
                                     f'-DCONFIG_IDF_TARGET_{target}=1',

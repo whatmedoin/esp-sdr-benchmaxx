@@ -329,13 +329,17 @@ void s3_unpack_iq10_win(const uint32_t *src, int16_t *dst, const int16_t *win2, 
 #endif
 static int16_t fft_buf[2 * RING_SPEC_NFFT_MAX] __attribute__((aligned(16)));
 /* Indexed by FFT output slot (bit-reversed order); emit maps slot -> bin.
- * mean: float power sum; max-hold: uint32 power per FFT slot (same storage). */
+ * C6 shares integer snapshot storage; other targets use float mean sums. */
+#if CONFIG_IDF_TARGET_ESP32C6
+static spectrum_integer_workspace_t scalar_power;
+#else
 #if CONFIG_IDF_TARGET_ESP32S3
 static float accum_buf[2][RING_SPEC_NFFT_MAX]; /* double buffer: core 1 encodes one while filling the other */
 #else
 static float accum_buf[1][RING_SPEC_NFFT_MAX];
 #endif
 static float *accum = accum_buf[0];
+#endif
 static uint16_t bin_of[RING_SPEC_NFFT_MAX]; /* FFT output slot -> natural-order bin */
 static uint8_t frame_out[sizeof(spec_header_t) + RING_SPEC_NFFT_MAX + 4];
 static unsigned spec_n, spec_log2; /* FFT size of the current run */
@@ -1015,7 +1019,9 @@ RING_HOT static void release_bank(unsigned b) {
     while (st.work[b].pending) unit_done(); /* FIFO order: older units retire first */
     if (iqs.pending && iqs.bank == b) iqs_abandon();
 #endif
-#if !CONFIG_IDF_TARGET_ESP32S3
+#if CONFIG_IDF_TARGET_ESP32C6
+    scalar_retire(b);
+#elif !CONFIG_IDF_TARGET_ESP32S3
     if (scalar.phase == SCALAR_COPY && scalar.bank == b) {
         scalar.phase = 0;
         st.res->abandoned++;
@@ -1599,8 +1605,13 @@ RING_HOT void ring_capture_run(const ring_config_t *cfg, ring_result_t *r) {
 #if !CONFIG_IDF_TARGET_ESP32S3
     spectrum_stats_init(&scalar_stats);
 #endif
+#if CONFIG_IDF_TARGET_ESP32C6
+    scalar_power = spectrum_integer_workspace();
+    memset(scalar_power.sum, 0, RING_SPEC_NFFT_MAX * sizeof(*scalar_power.sum));
+#else
     memset(accum_buf, 0, sizeof(accum_buf));
     accum = accum_buf[0];
+#endif
 #if CONFIG_IDF_TARGET_ESP32S3
     c1enc.pending = 0;
 #endif
@@ -1626,7 +1637,11 @@ RING_HOT void ring_capture_run(const ring_config_t *cfg, ring_result_t *r) {
             r->work_max = 0;
             memset(scalar.cost, 0, sizeof(scalar.cost));
             scalar_stats.at -= 250000;
+#if CONFIG_IDF_TARGET_ESP32C6
+            scalar_offer(0, 0, spec_n, 0);
+#else
             scalar_accept(0, 0, 0);
+#endif
             while (scalar_work()) {}
             scalar_flush();
             while (scalar_work()) {}
@@ -1869,7 +1884,12 @@ RING_HOT void ring_capture_run(const ring_config_t *cfg, ring_result_t *r) {
                 /* CRC/statistics are much slower than a butterfly slice.
                  * Reserving their worst case for every FFT slice wastes RF
                  * time and can prevent a bank copy from ever completing. */
-                uint32_t slice_cycles = scalar.cost[scalar.phase];
+#if CONFIG_IDF_TARGET_ESP32C6
+                unsigned phase = scalar.phase ? scalar.phase : SCALAR_COPY;
+#else
+                unsigned phase = scalar.phase;
+#endif
+                uint32_t slice_cycles = scalar.cost[phase];
                 slice_cycles += slice_cycles / 4;
                 if (slice_cycles < minimum_slice) slice_cycles = minimum_slice;
 #endif
@@ -1946,8 +1966,12 @@ RING_HOT void ring_capture_run(const ring_config_t *cfg, ring_result_t *r) {
         }
 #if !CONFIG_IDF_TARGET_ESP32S3
         if (spec) {
+#if CONFIG_IDF_TARGET_ESP32C6
+            scalar_offer(b, first, count, index);
+#else
             if (todo)
                 scalar_accept(b, (first + (start << spec_log2)) & RING_MASK, index + (start << spec_log2));
+#endif
 #else
         if (dual) {
             uint32_t i = c1.posted;

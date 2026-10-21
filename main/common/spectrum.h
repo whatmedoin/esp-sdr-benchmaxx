@@ -17,3 +17,10 @@ typedef struct {
     uint8_t *frame;
 } spectrum_workspace_t;
 spectrum_workspace_t spectrum_workspace(void);
+
+/* C6 snapshots and scalar ring share the same union-backed power storage. */
+typedef struct {
+    uint64_t *sum;
+    uint32_t *maximum;
+} spectrum_integer_workspace_t;
+spectrum_integer_workspace_t spectrum_integer_workspace(void);

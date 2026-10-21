@@ -28,10 +28,13 @@
 #endif
 static int16_t fft_data[2 * MAX_FFT] __attribute__((aligned(16))) SPEC_STORAGE;
 static int16_t window[MAX_FFT] SPEC_STORAGE;
-/* Same workspace size for both detectors. Max-hold never needs floats;
- * mean accumulation retains fractional precision without extra SRAM. */
+/* C6 sums are exact through 65535 full-scale FFTs. Its scalar ring reuses
+ * this storage; the float view remains the workspace for other targets. */
 static union {
     float mean[MAX_FFT];
+#if CONFIG_IDF_TARGET_ESP32C6
+    uint64_t sum[MAX_FFT];
+#endif
     uint32_t maximum[MAX_FFT];
 } powers SPEC_STORAGE;
 static uint8_t frame[HEADER_BYTES + MAX_FFT + 4] SPEC_STORAGE;
@@ -41,6 +44,12 @@ spectrum_workspace_t spectrum_workspace(void) {
     setup_n = 0;
     return (spectrum_workspace_t){fft_data, window, powers.mean, frame};
 }
+
+#if CONFIG_IDF_TARGET_ESP32C6
+spectrum_integer_workspace_t spectrum_integer_workspace(void) {
+    return (spectrum_integer_workspace_t){powers.sum, powers.maximum};
+}
+#endif
 
 static int16_t twiddles[MAX_FFT] __attribute__((aligned(16))) SPEC_STORAGE;
 bool spectrum_fft_init(void) {
@@ -141,10 +150,19 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
     put16(24, 0);
     frame[26] = log2n;
     frame[27] = 2;
+#if CONFIG_IDF_TARGET_ESP32C6
+    const uint32_t mean_log2 = det ? 0 : spectrum_mean_log2(merged);
+#else
     const float mean_scale = 1.0f / merged;
+#endif
     for (unsigned j = 0, bin = 0; j < n; j++) {
+#if CONFIG_IDF_TARGET_ESP32C6
+        frame[HEADER_BYTES + bin] =
+            det ? spectrum_power_code(powers.maximum[j]) : spectrum_sum_power_code(powers.sum[j], mean_log2);
+#else
         frame[HEADER_BYTES + bin] = det ? spectrum_power_code(powers.maximum[j])
                                         : spectrum_mean_power_code(powers.mean[j] * mean_scale);
+#endif
         unsigned bit = n >> 1;
         while (bin & bit) {
             bin ^= bit;
@@ -153,7 +171,11 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
         bin ^= bit;
     }
     put32(HEADER_BYTES + n, esp_rom_crc32_le(0, frame, HEADER_BYTES + n));
+#if CONFIG_IDF_TARGET_ESP32C6
+    memset(&powers, 0, n * (det ? sizeof(powers.maximum[0]) : sizeof(powers.sum[0])));
+#else
     memset(&powers, 0, n * sizeof(float));
+#endif
     return HEADER_BYTES + n + 4;
 }
 
@@ -210,7 +232,11 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
     uint8_t gain = 0;
     uint64_t index = 0;
     spectrum_output_t out = {.frames = &frames, .progress = start};
+#if CONFIG_IDF_TARGET_ESP32C6
+    memset(&powers, 0, n * (det ? sizeof(powers.maximum[0]) : sizeof(powers.sum[0])));
+#else
     memset(&powers, 0, n * sizeof(float));
+#endif
     do {
         if (burst_serial_stop_requested()) {
             stopped = true;
@@ -232,6 +258,17 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
         }
         spectrum_fft_poll(fft_data, n, dsps_fft_w_table_sc16, pump_spectrum, &out);
         spectrum_dc_apply(&dc, fft_data, n);
+#if CONFIG_IDF_TARGET_ESP32C6
+        if (det) {
+            for (unsigned j = 0; j < n; j++) {
+                uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
+                if (p > powers.maximum[j]) powers.maximum[j] = p;
+            }
+        } else {
+            for (unsigned j = 0; j < n; j++)
+                powers.sum[j] += spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
+        }
+#else
         for (unsigned j = 0; j < n; j++) {
             uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
             if (det) {
@@ -239,6 +276,7 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
             } else
                 powers.mean[j] += (float)p;
         }
+#endif
         ffts++;
         pairs += n;
         merged++;

@@ -7,12 +7,14 @@ static inline uint32_t spectrum_complex_power(int16_t re, int16_t im) {
     /* Each product fits int32_t; the sum can be exactly 2^31. */
     return (uint32_t)((int32_t)re * re) + (uint32_t)((int32_t)im * im);
 }
-static inline uint8_t spectrum_log_power_code(unsigned exponent, uint32_t norm) {
+static inline uint32_t spectrum_log2_q12(unsigned exponent, uint32_t norm) {
     static const uint16_t log2_q12[17] = {0,    358,  696,  1016, 1319, 1607, 1882, 2144, 2396,
                                           2637, 2869, 3092, 3307, 3515, 3715, 3908, 4096};
     unsigned slot = (norm - 256u) >> 4, frac = norm & 15u;
-    uint32_t logarithm =
-        (exponent << 12) + log2_q12[slot] + ((log2_q12[slot + 1] - log2_q12[slot]) * frac + 8) / 16;
+    return (exponent << 12) + log2_q12[slot] + ((log2_q12[slot + 1] - log2_q12[slot]) * frac + 8) / 16;
+}
+static inline uint8_t spectrum_log_power_code(unsigned exponent, uint32_t norm) {
+    uint32_t logarithm = spectrum_log2_q12(exponent, norm);
     unsigned code = (logarithm * 1541u + (1u << 19)) >> 20; /* 20 log10(power), rounded */
     return code > 255 ? 255 : code;
 }
@@ -20,6 +22,22 @@ static inline uint8_t spectrum_power_code(uint32_t power) {
     if (!power) return 0;
     unsigned exponent = 31u - __builtin_clz(power);
     return spectrum_log_power_code(exponent, (power << (31u - exponent)) >> 23);
+}
+/* Positive batch count, computed once per frame. Subtracting its logarithm
+ * preserves fractional means without per-bin division or software float. */
+static inline uint32_t spectrum_mean_log2(unsigned count) {
+    unsigned exponent = 31u - __builtin_clz(count);
+    return spectrum_log2_q12(exponent, (count << (31u - exponent)) >> 23);
+}
+static inline uint8_t spectrum_sum_power_code(uint64_t sum, uint32_t mean_log2) {
+    if (!sum) return 0;
+    uint32_t high = (uint32_t)(sum >> 32);
+    unsigned exponent = high ? 63u - __builtin_clz(high) : 31u - __builtin_clz((uint32_t)sum);
+    uint32_t norm = exponent > 8 ? (uint32_t)(sum >> (exponent - 8)) : (uint32_t)sum << (8 - exponent);
+    uint32_t logarithm = spectrum_log2_q12(exponent, norm);
+    if (logarithm <= mean_log2) return 0;
+    unsigned code = ((logarithm - mean_log2) * 1541u + (1u << 19)) >> 20;
+    return code > 255 ? 255 : code;
 }
 /* Averaged powers retain fractions: truncating them to integer power would
  * bias quiet bins down by several wire steps. Extract the float mantissa
