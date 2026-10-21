@@ -24,6 +24,22 @@
 
 #define MAX_FFT      2048u
 #define HEADER_BYTES 28u
+#ifndef C5_SNAPSHOT_WINDOWS
+#define C5_SNAPSHOT_WINDOWS 0
+#endif
+#if C5_SPECTRUM_PROFILE
+static struct {
+    uint64_t acquire, window, fft, dc, power, pack, tx, fft_tx;
+    unsigned n, ffts, frames;
+} profile;
+#define SPEC_TIME(stage, ...) do { \
+    uint32_t profile_start = esp_cpu_get_cycle_count(); \
+    __VA_ARGS__; \
+    profile.stage += (uint32_t)(esp_cpu_get_cycle_count() - profile_start); \
+} while (0)
+#else
+#define SPEC_TIME(stage, ...) do { __VA_ARGS__; } while (0)
+#endif
 #if CONFIG_IDF_TARGET_ESP32C2
 /* Quiescent during RF capture; keep heap/stacks in the other SRAM banks. */
 #define SPEC_STORAGE __attribute__((section(".c2_spectrum"), aligned(16)))
@@ -144,16 +160,62 @@ typedef struct {
     uint32_t *frames;
     int64_t progress;
 } spectrum_output_t;
-static void pump_spectrum(void *context) {
+static bool pump_spectrum(void *context) {
     spectrum_output_t *out = context;
-    if (!out->pending) return;
-    size_t written = burst_serial_try_send(frame + out->sent, out->pending - out->sent);
+    if (!out->pending) return false;
+    size_t written;
+    SPEC_TIME(tx, written = burst_serial_try_send(frame + out->sent, out->pending - out->sent));
     out->sent += written;
     if (written) out->progress = esp_timer_get_time();
     if (out->sent == out->pending) {
         out->pending = out->sent = 0;
         (*out->frames)++;
     }
+    return out->pending != 0;
+}
+
+static inline unsigned spectrum_bin(unsigned j, unsigned log2n) {
+    static const uint8_t reverse8[256] = {
+        0, 128, 64, 192, 32, 160, 96, 224, 16, 144, 80, 208, 48, 176, 112, 240,
+        8, 136, 72, 200, 40, 168, 104, 232, 24, 152, 88, 216, 56, 184, 120, 248,
+        4, 132, 68, 196, 36, 164, 100, 228, 20, 148, 84, 212, 52, 180, 116, 244,
+        12, 140, 76, 204, 44, 172, 108, 236, 28, 156, 92, 220, 60, 188, 124, 252,
+        2, 130, 66, 194, 34, 162, 98, 226, 18, 146, 82, 210, 50, 178, 114, 242,
+        10, 138, 74, 202, 42, 170, 106, 234, 26, 154, 90, 218, 58, 186, 122, 250,
+        6, 134, 70, 198, 38, 166, 102, 230, 22, 150, 86, 214, 54, 182, 118, 246,
+        14, 142, 78, 206, 46, 174, 110, 238, 30, 158, 94, 222, 62, 190, 126, 254,
+        1, 129, 65, 193, 33, 161, 97, 225, 17, 145, 81, 209, 49, 177, 113, 241,
+        9, 137, 73, 201, 41, 169, 105, 233, 25, 153, 89, 217, 57, 185, 121, 249,
+        5, 133, 69, 197, 37, 165, 101, 229, 21, 149, 85, 213, 53, 181, 117, 245,
+        13, 141, 77, 205, 45, 173, 109, 237, 29, 157, 93, 221, 61, 189, 125, 253,
+        3, 131, 67, 195, 35, 163, 99, 227, 19, 147, 83, 211, 51, 179, 115, 243,
+        11, 139, 75, 203, 43, 171, 107, 235, 27, 155, 91, 219, 59, 187, 123, 251,
+        7, 135, 71, 199, 39, 167, 103, 231, 23, 151, 87, 215, 55, 183, 119, 247,
+        15, 143, 79, 207, 47, 175, 111, 239, 31, 159, 95, 223, 63, 191, 127, 255,
+    };
+    return ((unsigned)reverse8[j & 255u] << 8 | reverse8[j >> 8]) >> (16 - log2n);
+}
+
+static inline void accumulate_spectrum(unsigned n, unsigned det) {
+#if SPECTRUM_INTEGER_POWER
+    if (det) {
+        for (unsigned j = 0; j < n; j++) {
+            uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
+            if (p > powers.maximum[j]) powers.maximum[j] = p;
+        }
+    } else {
+        for (unsigned j = 0; j < n; j++)
+            powers.sum[j] += spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
+    }
+#else
+    for (unsigned j = 0; j < n; j++) {
+        uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
+        if (det) {
+            if (p > powers.maximum[j]) powers.maximum[j] = p;
+        } else
+            powers.mean[j] += (float)p;
+    }
+#endif
 }
 
 /* Encoding consumes the completed batch; transmission owns frame[] while
@@ -170,25 +232,19 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
     put16(24, 0);
     frame[26] = log2n;
     frame[27] = 2;
+    if (det) {
+        for (unsigned j = 0; j < n; j++)
+            frame[HEADER_BYTES + spectrum_bin(j, log2n)] = spectrum_power_code(powers.maximum[j]);
+    } else {
 #if SPECTRUM_INTEGER_POWER
-    const uint32_t mean_log2 = det ? 0 : spectrum_mean_log2(merged);
+        const uint32_t mean_log2 = spectrum_mean_log2(merged);
+        for (unsigned j = 0; j < n; j++)
+            frame[HEADER_BYTES + spectrum_bin(j, log2n)] = spectrum_sum_power_code(powers.sum[j], mean_log2);
 #else
-    const float mean_scale = 1.0f / merged;
+        const float mean_scale = 1.0f / merged;
+        for (unsigned j = 0; j < n; j++)
+            frame[HEADER_BYTES + spectrum_bin(j, log2n)] = spectrum_mean_power_code(powers.mean[j] * mean_scale);
 #endif
-    for (unsigned j = 0, bin = 0; j < n; j++) {
-#if SPECTRUM_INTEGER_POWER
-        frame[HEADER_BYTES + bin] =
-            det ? spectrum_power_code(powers.maximum[j]) : spectrum_sum_power_code(powers.sum[j], mean_log2);
-#else
-        frame[HEADER_BYTES + bin] = det ? spectrum_power_code(powers.maximum[j])
-                                        : spectrum_mean_power_code(powers.mean[j] * mean_scale);
-#endif
-        unsigned bit = n >> 1;
-        while (bin & bit) {
-            bin ^= bit;
-            bit >>= 1;
-        }
-        bin ^= bit;
     }
     put32(HEADER_BYTES + n, esp_rom_crc32_le(0, frame, HEADER_BYTES + n));
 #if SPECTRUM_INTEGER_POWER
@@ -200,6 +256,20 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
 }
 
 bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire_fn acquire) {
+#if C5_SPECTRUM_PROFILE
+    if (!strcmp(line, "SPECPROFILE?")) {
+        char text[384];
+        snprintf(text, sizeof(text),
+                 "SPECPROFILE {\"n\":%u,\"ffts\":%u,\"frames\":%u,"
+                 "\"acquire\":%" PRIu64 ",\"window\":%" PRIu64 ",\"fft\":%" PRIu64
+                 ",\"dc\":%" PRIu64 ",\"power\":%" PRIu64 ",\"pack\":%" PRIu64
+                 ",\"tx\":%" PRIu64 ",\"fft_tx\":%" PRIu64 "}\n",
+                 profile.n, profile.ffts, profile.frames, profile.acquire, profile.window,
+                 profile.fft, profile.dc, profile.power, profile.pack, profile.tx, profile.fft_tx);
+        send_text(text);
+        return true;
+    }
+#endif
     unsigned dc_mode;
     char dc_extra;
     if (!strcmp(line, "DC?")) {
@@ -245,6 +315,10 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
     uint32_t frames = 0, ffts = 0, status = 0;
     uint64_t pairs = 0;
     bool stopped = false;
+#if C5_SPECTRUM_PROFILE
+    memset(&profile, 0, sizeof(profile));
+    profile.n = n;
+#endif
     spectrum_dc_t dc = {0};
     spectrum_stats_t telemetry;
     spectrum_stats_init(&telemetry);
@@ -256,7 +330,10 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
     /* chip.h exposes 16380 words plus four overrun canaries in RF SRAM.
      * RF stays stopped while the windows are consumed, so no prefetch buffer
      * or bank-ownership protocol is needed. State is local to this request. */
-    const unsigned snapshot_n = (16380u / n) * n;
+    unsigned snapshot_windows = 16380u / n;
+    if (C5_SNAPSHOT_WINDOWS && snapshot_windows > C5_SNAPSHOT_WINDOWS)
+        snapshot_windows = C5_SNAPSHOT_WINDOWS;
+    const unsigned snapshot_n = snapshot_windows * n;
     const uint32_t *snapshot = NULL;
     unsigned snapshot_at = snapshot_n;
     uint64_t snapshot_index = 0;
@@ -277,7 +354,9 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
 #if CONFIG_IDF_TARGET_ESP32C5
         if (snapshot_at == snapshot_n) {
             snapshot_index = (uint64_t)(esp_timer_get_time() - start) * rate_hz(rate) / 1000000u;
-            if (!acquire(snapshot_n, rate, &snapshot, &elapsed)) {
+            bool acquired;
+            SPEC_TIME(acquire, acquired = acquire(snapshot_n, rate, &snapshot, &elapsed));
+            if (!acquired) {
                 status = 1;
                 break;
             }
@@ -294,33 +373,22 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
         }
 #endif
         if (!merged) gain = words[0] >> 20;
-        for (unsigned j = 0; j < n; j++) {
+        SPEC_TIME(window, for (unsigned j = 0; j < n; j++) {
             int32_t i = ((int32_t)(words[j] << 22) >> 22), q = ((int32_t)(words[j] << 12) >> 22);
             /* IQ10 times a nonnegative Q15 Hann fits int16 without clipping. */
             fft_data[2 * j] = (int16_t)((i * window[j]) >> 9);
             fft_data[2 * j + 1] = (int16_t)((q * window[j]) >> 9);
-        }
-        spectrum_fft_poll(fft_data, n, dsps_fft_w_table_sc16, pump_spectrum, &out);
-        spectrum_dc_apply(&dc, fft_data, n);
-#if SPECTRUM_INTEGER_POWER
-        if (det) {
-            for (unsigned j = 0; j < n; j++) {
-                uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
-                if (p > powers.maximum[j]) powers.maximum[j] = p;
-            }
-        } else {
-            for (unsigned j = 0; j < n; j++)
-                powers.sum[j] += spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
-        }
-#else
-        for (unsigned j = 0; j < n; j++) {
-            uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
-            if (det) {
-                if (p > powers.maximum[j]) powers.maximum[j] = p;
-            } else
-                powers.mean[j] += (float)p;
-        }
+        });
+#if C5_SPECTRUM_PROFILE
+        uint64_t fft_tx_start = profile.tx;
 #endif
+        SPEC_TIME(fft, spectrum_fft_poll(fft_data, n, dsps_fft_w_table_sc16,
+                                         out.pending ? pump_spectrum : NULL, &out));
+#if C5_SPECTRUM_PROFILE
+        profile.fft_tx += profile.tx - fft_tx_start;
+#endif
+        SPEC_TIME(dc, spectrum_dc_apply(&dc, fft_data, n));
+        SPEC_TIME(power, accumulate_spectrum(n, det));
         ffts++;
         pairs += n;
         merged++;
@@ -331,7 +399,7 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
         }
         if (!out.pending) {
             if (stats) spectrum_stats_emit(&telemetry, n, rate_hz(rate), ffts, 0, 0, 0, 0, burst_serial_send);
-            out.pending = pack_spectrum(n, log2n, det, merged, frames, index, gain);
+            SPEC_TIME(pack, out.pending = pack_spectrum(n, log2n, det, merged, frames, index, gain));
             merged = 0;
             out.progress = esp_timer_get_time();
             pump_spectrum(&out);
@@ -351,12 +419,17 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
             status = 7;
     }
     if (!status && merged) {
-        size_t size = pack_spectrum(n, log2n, det, merged, frames, index, gain);
+        size_t size;
+        SPEC_TIME(pack, size = pack_spectrum(n, log2n, det, merged, frames, index, gain));
         if (burst_serial_send(frame, size))
             frames++;
         else
             status = 7;
     }
+#if C5_SPECTRUM_PROFILE
+    profile.ffts = ffts;
+    profile.frames = frames;
+#endif
     snprintf(text, sizeof(text), "SPECEND %u 0 %u %" PRIu64 " %" PRIi64 " 0 0 %u 0 0 %u %u\n",
              (unsigned)status, (unsigned)ffts, pairs, esp_timer_get_time() - start, (unsigned)frames,
              (unsigned)ffts, stopped);

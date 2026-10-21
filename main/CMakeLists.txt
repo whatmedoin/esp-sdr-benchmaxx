@@ -9,6 +9,9 @@ if(NOT IDF_TARGET IN_LIST esp_sdr_supported_targets)
 endif()
 
 option(SAMPLE_RATE_PROBE "Build volatile hardware sample-rate diagnostics (never package)" OFF)
+option(C5_SPECTRUM_PROFILE "Build C5 stage-cycle diagnostics (never package)" OFF)
+set(C5_SNAPSHOT_WINDOWS "0" CACHE STRING "C5 snapshot depth limit; 0 uses capture capacity")
+set(C5_FFT_POLL_BUTTERFLIES "512" CACHE STRING "C5 butterflies between output service points")
 
 set(target_dir "targets/${IDF_TARGET}")
 set(target_includes "${target_dir}")
@@ -72,6 +75,23 @@ idf_component_register(SRCS "${receiver}" ${sources}
     LDFRAGMENTS ${fragments}
     PRIV_INCLUDE_DIRS "common" ${target_includes} "diagnostics"
     REQUIRES ${dependencies})
+
+if(IDF_TARGET STREQUAL "esp32c5")
+    if(NOT C5_SNAPSHOT_WINDOWS MATCHES "^[0-9]+$" OR C5_SNAPSHOT_WINDOWS GREATER 63)
+        message(FATAL_ERROR "C5_SNAPSHOT_WINDOWS must be 0..63")
+    endif()
+    if(NOT C5_FFT_POLL_BUTTERFLIES MATCHES "^(32|64|128|256|512)$")
+        message(FATAL_ERROR "C5_FFT_POLL_BUTTERFLIES must be 32, 64, 128, 256 or 512")
+    endif()
+    target_compile_definitions(${COMPONENT_LIB} PRIVATE
+        C5_SNAPSHOT_WINDOWS=${C5_SNAPSHOT_WINDOWS}
+        C5_FFT_POLL_BUTTERFLIES=${C5_FFT_POLL_BUTTERFLIES})
+    if(C5_SPECTRUM_PROFILE)
+        target_compile_definitions(${COMPONENT_LIB} PRIVATE C5_SPECTRUM_PROFILE=1)
+    endif()
+elseif(C5_SPECTRUM_PROFILE)
+    message(FATAL_ERROR "C5_SPECTRUM_PROFILE requires esp32c5")
+endif()
 
 # Regenerate at build time (not only CMake configure time). The embedded record
 # is also the artifact exporter's source of revision and UTC build time.

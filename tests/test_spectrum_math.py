@@ -47,8 +47,10 @@ static bool txq_push(const void*p,unsigned n){return true;}
 #define scalar_telemetry(cycles,complete) ((void)0)
 #include "ring_scalar.h"
 #include "spectrum_fft.h"
-static unsigned polls;
-static void poll(void *ctx){assert(ctx==&polls);polls++;}
+static unsigned polls, stop_after_polls;
+static bool poll(void *ctx){assert(ctx==&polls);polls++;return true;}
+static bool poll_once(void *ctx){assert(ctx==&polls);polls++;return false;}
+static bool poll_until(void *ctx){assert(ctx==&polls);return ++polls<stop_after_polls;}
 static unsigned rev(unsigned x,unsigned bits){unsigned r=0;while(bits--){r=r*2+(x&1);x>>=1;}return r;}
 int main(void){
  for(unsigned j=0;j<1024;j++){
@@ -134,6 +136,16 @@ int main(void){
    unsigned stages=0;for(unsigned m=spec_n;m>1;m/=2)stages++;
    assert(polls==spec_n/2*stages/SPECTRUM_FFT_POLL_BUTTERFLIES);
    assert(!memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
+   memcpy(sliced,fft_buf,2*spec_n*sizeof(*fft_buf));
+   spectrum_fft_poll(sliced,spec_n,coefficients,NULL,NULL);
+   assert(!memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
+   memcpy(sliced,fft_buf,2*spec_n*sizeof(*fft_buf));polls=0;
+   spectrum_fft_poll(sliced,spec_n,coefficients,poll_once,&polls);
+   assert(polls==1 && !memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
+   memcpy(sliced,fft_buf,2*spec_n*sizeof(*fft_buf));polls=0;
+   stop_after_polls=spec_n/2*stages/SPECTRUM_FFT_POLL_BUTTERFLIES-1;
+   spectrum_fft_poll(sliced,spec_n,coefficients,poll_until,&polls);
+   assert(polls==stop_after_polls && !memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
    memset(&scalar,0,sizeof(scalar));scalar.phase=1;scalar.half=spec_n/2;scalar.groups=1;
    while(scalar.phase==1)scalar_work();
    assert(!memcmp(fft_buf,reference,2*spec_n*sizeof(*fft_buf)));
@@ -164,9 +176,11 @@ int main(void){
         with tempfile.TemporaryDirectory() as tmp:
             src=Path(tmp)/'numeric.c';src.write_text(source)
             exe=Path(tmp)/'numeric'
-            for target in ['ESP32C3', 'ESP32C5']:
+            for target, interval in [('ESP32C3', 32), ('ESP32C5', 32), ('ESP32C5', 64), ('ESP32C5', 128),
+                                     ('ESP32C5', 256), ('ESP32C5', 512)]:
                 subprocess.run(['cc','-std=gnu11','-O2','-fsanitize=address,undefined',
                                 '-fno-sanitize-recover=all',f'-DCONFIG_IDF_TARGET_{target}=1',
+                                f'-DC5_FFT_POLL_BUTTERFLIES={interval}',
                                 '-I'+str(ROOT/'main/common'),str(src),'-lm','-o',str(exe)],check=True)
                 subprocess.run([str(exe)],check=True)
 

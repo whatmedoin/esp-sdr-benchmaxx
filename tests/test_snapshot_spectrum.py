@@ -46,8 +46,8 @@ static void dsps_fft2r_sc16_ansi(int16_t *x,unsigned n){
     for(unsigned j=0;j<n;j++){x[2*j]=full_scale?INT16_MIN:(j%97+1)*(transforms+1);x[2*j+1]=full_scale?INT16_MIN:0;}
     transforms++;
 }
-static void spectrum_fft_poll(int16_t *x,unsigned n,const int16_t *w,void (*poll)(void*),void *context){
- dsps_fft2r_sc16_ansi(x,n);poll(context);
+static void spectrum_fft_poll(int16_t *x,unsigned n,const int16_t *w,bool (*poll)(void*),void *context){
+ dsps_fft2r_sc16_ansi(x,n);if(poll)poll(context);
 }
 static uint32_t esp_rom_crc32_le(uint32_t c,const void *p,unsigned n){return 0;}
 burst_serial_port_t burst_serial_port(void){return BURST_SERIAL_USB;}
@@ -163,6 +163,14 @@ int main(void){
   assert(acquisitions==stop_after);
 #endif
  }
+ replies[0]=0;
+#if C5_SPECTRUM_PROFILE
+ assert(spectrum_command("SPECPROFILE?",2412,acquire));
+ assert(strstr(replies,"SPECPROFILE {\"n\":2048,\"ffts\":70,\"frames\":67,"));
+ assert(strstr(replies,"\"fft_tx\":0}"));
+#else
+ assert(!spectrum_command("SPECPROFILE?",2412,acquire));
+#endif
  return 0;
 }
 '''
@@ -170,10 +178,11 @@ int main(void){
             src = Path(tmp) / 'snapshot.c'
             src.write_text('#include <stdlib.h>\n' + stub + source + check)
             exe = Path(tmp) / 'snapshot'
-            for target in ['ESP32C3', 'ESP32C61', 'ESP32C6', 'ESP32C5']:
-                with self.subTest(target=target):
+            for target, profile in [('ESP32C3', 0), ('ESP32C61', 0), ('ESP32C6', 0),
+                                    ('ESP32C5', 0), ('ESP32C5', 1)]:
+                with self.subTest(target=target, profile=profile):
                     subprocess.run(['cc', '-std=gnu11', '-O2', '-fsanitize=address,undefined',
                                     '-fno-sanitize-recover=all',
-                                    f'-DCONFIG_IDF_TARGET_{target}=1',
+                                    f'-DCONFIG_IDF_TARGET_{target}=1', f'-DC5_SPECTRUM_PROFILE={profile}',
                                     '-I' + str(ROOT / 'main/common'), str(src), '-lm', '-o', str(exe)], check=True)
                     subprocess.run([str(exe)], check=True)

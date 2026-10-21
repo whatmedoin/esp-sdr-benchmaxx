@@ -20,6 +20,7 @@ def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_b
     if pause_before_read:
         time.sleep(pause_before_read)
     frames = ffts = statistics = 0
+    fft_rates = []
     previous = -1
     stopped = False
     while True:
@@ -42,6 +43,7 @@ def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_b
             if not stats:
                 raise RuntimeError('Unrequested statistics')
             statistics += 1
+            fft_rates.append(int.from_bytes(frame[32:36], 'little'))
             continue
         index = int.from_bytes(frame[8:16], 'little')
         count = int.from_bytes(frame[20:22], 'little')
@@ -61,7 +63,7 @@ def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_b
     return {'milliseconds': milliseconds, 'rate': rate, 'n': n, 'detector': detector,
             'stats': stats, 'stop_after': stop_after, 'pause_before_read': pause_before_read,
             'frames': frames, 'ffts': ffts,
-            'statistics': statistics, 'report': report}
+            'statistics': statistics, 'fft_rates': fft_rates, 'report': report}
 
 
 def main():
