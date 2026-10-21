@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run a controlled C6 spectrum matrix without flashing firmware."""
+"""Run a controlled C5/C6 scalar spectrum matrix without flashing firmware."""
 import argparse
 import json
 from pathlib import Path
@@ -9,9 +9,11 @@ import serial
 from check_spectrum import check, command, exact, synchronize
 
 
-def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_before_read=0):
+def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_before_read=0,
+          identity='C6SDR 6 burst 16380'):
     header = command(port, f'SPEC {milliseconds} 1 1 {detector} {rate} {n} {stats}')
-    fs = {0: 80000000, 1: 40000000, 6: 16000000}[rate]
+    fs = {0: 80000000, 1: 40000000, 2: 20000000, 3: 10000000,
+          4: 8000000, 5: 4000000, 6: 16000000}[rate]
     if header.split()[:3] != ['SPEC', str(n), str(fs)]:
         raise RuntimeError(header)
     start = time.monotonic()
@@ -45,7 +47,7 @@ def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_b
         count = int.from_bytes(frame[20:22], 'little')
         if (int.from_bytes(frame[4:8], 'little') != frames or index <= previous or not count or
                 int.from_bytes(frame[16:20], 'little') < count * n or
-                frame[22] & 1 != detector or bool(frame[22] & 8) != (n != 256) or
+                frame[22] & 1 != detector or bool(frame[22] & 8) != (identity.startswith('C5SDR ') or n != 256) or
                 frame[26] != n.bit_length() - 1 or frame[27] != 2):
             raise RuntimeError('Invalid frame metadata')
         previous = index
@@ -54,7 +56,7 @@ def probe(port, milliseconds, rate, n, detector, stats, stop_after=None, pause_b
     if (report[0] or report[7] != frames or report[8] or report[10] != ffts or
             bool(report[11]) != stopped):
         raise RuntimeError(f'Invalid end report: {report}, frames={frames}, FFTs={ffts}')
-    if not command(port, 'INFO').startswith('C6SDR '):
+    if command(port, 'INFO') != identity:
         raise RuntimeError('Command access failed after capture')
     return {'milliseconds': milliseconds, 'rate': rate, 'n': n, 'detector': detector,
             'stats': stats, 'stop_after': stop_after, 'pause_before_read': pause_before_read,
@@ -80,11 +82,15 @@ def main():
     try:
         synchronize(port)
         identity = command(port, 'INFO')
-        if not identity.startswith('C6SDR '):
-            raise RuntimeError(f'Expected C6SDR, got {identity}')
+        if not identity.startswith(('C5SDR ', 'C6SDR ')):
+            raise RuntimeError(f'Expected C5SDR or C6SDR, got {identity}')
+        c5 = identity.startswith('C5SDR ')
+        rates = (0, 1, 2, 3, 4, 5) if c5 else (0, 1, 6)
         version = command(port, 'VERSION?')
         dc = command(port, 'DC?').split()[1]
         settings = ['FREQ 2412', 'GAIN MANUAL 40', 'ALPF AUTO', 'DC 1']
+        if c5:
+            settings.append('LPF AUTO')
         for setting in settings:
             reply = command(port, setting)
             if reply != 'OK':
@@ -102,26 +108,27 @@ def main():
             for mode in (0, 1):
                 if command(port, f'DC {mode}') != 'OK':
                     raise RuntimeError('DC command failed')
-                for rate in (0, 1, 6):
+                for rate in rates:
                     for n in (256, 512, 1024, 2048):
                         for detector in (0, 1):
-                            run = probe(port, 5, rate, n, detector, 0)
+                            run = probe(port, 5, rate, n, detector, 0, identity=identity)
                             run['dc'] = mode
                             result['stress'].append(run)
                     for n in (256, 1024):
                         for detector in (0, 1):
                             for delay in (0, .03):
-                                run = probe(port, 0, rate, n, detector, 1, delay)
+                                run = probe(port, 0, rate, n, detector, 1, delay, identity=identity)
                                 run['dc'] = mode
                                 result['stress'].append(run)
-            for rate in (0, 1, 6):
+            for rate in rates:
                 for detector in (0, 1):
-                    result['stress'].append(probe(port, 5000, rate, 256, detector, 1))
-            for rate, n in [(0, 256), (1, 256), (6, 256), (0, 1024)]:
+                    result['stress'].append(probe(port, 5000, rate, 256, detector, 1, identity=identity))
+            for rate, n in [(0, 256), (1, 256), (rates[-1], 256), (0, 1024)]:
                 for detector in (0, 1):
-                    result['stress'].append(probe(port, 800, rate, n, detector, 1, pause_before_read=.35))
+                    result['stress'].append(probe(port, 800, rate, n, detector, 1,
+                                                 pause_before_read=.35, identity=identity))
             result['raw'] = []
-            for rate in (0, 1, 6):
+            for rate in rates:
                 for n in (257, 16380):
                     for bits in (16, 20, 32):
                         tag = 'CAP' if bits == 32 else f'CAP{bits}'

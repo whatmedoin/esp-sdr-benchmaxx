@@ -131,7 +131,9 @@ int main(void){
    }
    int16_t sliced[4096];memcpy(sliced,fft_buf,2*spec_n*sizeof(*fft_buf));polls=0;
    spectrum_fft_poll(sliced,spec_n,coefficients,poll,&polls);
-   assert(polls && !memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
+   unsigned stages=0;for(unsigned m=spec_n;m>1;m/=2)stages++;
+   assert(polls==spec_n/2*stages/SPECTRUM_FFT_POLL_BUTTERFLIES);
+   assert(!memcmp(sliced,reference,2*spec_n*sizeof(*fft_buf)));
    memset(&scalar,0,sizeof(scalar));scalar.phase=1;scalar.half=spec_n/2;scalar.groups=1;
    while(scalar.phase==1)scalar_work();
    assert(!memcmp(fft_buf,reference,2*spec_n*sizeof(*fft_buf)));
@@ -162,8 +164,11 @@ int main(void){
         with tempfile.TemporaryDirectory() as tmp:
             src=Path(tmp)/'numeric.c';src.write_text(source)
             exe=Path(tmp)/'numeric'
-            subprocess.run(['cc','-std=gnu11','-O2','-fsanitize=undefined','-fno-sanitize-recover=all','-I'+str(ROOT/'main/common'),str(src),'-lm','-o',str(exe)],check=True)
-            subprocess.run([str(exe)],check=True)
+            for target in ['ESP32C3', 'ESP32C5']:
+                subprocess.run(['cc','-std=gnu11','-O2','-fsanitize=address,undefined',
+                                '-fno-sanitize-recover=all',f'-DCONFIG_IDF_TARGET_{target}=1',
+                                '-I'+str(ROOT/'main/common'),str(src),'-lm','-o',str(exe)],check=True)
+                subprocess.run([str(exe)],check=True)
 
     @unittest.skipUnless(shutil.which('cc'), 'Host C compiler unavailable')
     def test_dc_tracker_preserves_changes_and_bounds_hann_correction(self):

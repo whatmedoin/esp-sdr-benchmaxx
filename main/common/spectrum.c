@@ -1,12 +1,16 @@
 /* Portable on-chip spectra for targets without a validated continuous backend.
- * Each frame is an independent snapshot. Frame indices use elapsed wall time,
- * and flag bit 3 explicitly marks the gaps between acquisitions. */
+ * C5 snapshots supply multiple complete FFT windows; other targets acquire one.
+ * Indices use elapsed wall time plus offsets within a snapshot; flag bit 3
+ * explicitly marks the gaps between acquisitions. */
 #include "spectrum.h"
 #include "spectrum_dc.h"
 #include "spectrum_math.h"
 #include "spectrum_fft.h"
 #include "spectrum_stats.h"
 #include "esp_cpu.h"
+#if CONFIG_IDF_TARGET_ESP32C5
+#include "esp_heap_caps.h"
+#endif
 #include "burst_serial.h"
 #include "dsps_fft2r.h"
 #include "esp_rom_crc.h"
@@ -28,31 +32,51 @@
 #endif
 static int16_t fft_data[2 * MAX_FFT] __attribute__((aligned(16))) SPEC_STORAGE;
 static int16_t window[MAX_FFT] SPEC_STORAGE;
-/* C6 sums are exact through 65535 full-scale FFTs. Its scalar ring reuses
+/* C5/C6 sums are exact through 65535 full-scale FFTs. The C6 ring reuses
  * this storage; the float view remains the workspace for other targets. */
-static union {
+typedef union {
     float mean[MAX_FFT];
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
     uint64_t sum[MAX_FFT];
 #endif
     uint32_t maximum[MAX_FFT];
-} powers SPEC_STORAGE;
+} spectrum_power_t;
+#if CONFIG_IDF_TARGET_ESP32C5
+/* C5 static sections nearly reach RF SRAM. Keep the larger union in fast
+ * DMA-capable heap memory, never RTC/low-power SRAM. */
+static spectrum_power_t *power_storage;
+#define powers (*power_storage)
+#else
+static spectrum_power_t powers SPEC_STORAGE;
+#endif
 static uint8_t frame[HEADER_BYTES + MAX_FFT + 4] SPEC_STORAGE;
 static unsigned setup_n;
 static bool ready;
 spectrum_workspace_t spectrum_workspace(void) {
+#if CONFIG_IDF_TARGET_ESP32C5
+    if (!spectrum_fft_init()) return (spectrum_workspace_t){0};
+#endif
     setup_n = 0;
     return (spectrum_workspace_t){fft_data, window, powers.mean, frame};
 }
 
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
 spectrum_integer_workspace_t spectrum_integer_workspace(void) {
+#if CONFIG_IDF_TARGET_ESP32C5
+    if (!spectrum_fft_init()) return (spectrum_integer_workspace_t){0};
+#endif
     return (spectrum_integer_workspace_t){powers.sum, powers.maximum};
 }
 #endif
 
 static int16_t twiddles[MAX_FFT] __attribute__((aligned(16))) SPEC_STORAGE;
 bool spectrum_fft_init(void) {
+#if CONFIG_IDF_TARGET_ESP32C5
+    if (!power_storage)
+        power_storage = heap_caps_malloc(sizeof(*power_storage),
+                                         MALLOC_CAP_INTERNAL | MALLOC_CAP_DMA | MALLOC_CAP_8BIT);
+    if (!power_storage) return false;
+#endif
     if (!ready) ready = dsps_fft2r_init_sc16(twiddles, MAX_FFT) == ESP_OK;
     return ready;
 }
@@ -88,10 +112,6 @@ static void put64(unsigned at, uint64_t v) {
     put32(at, v);
     put32(at + 4, v >> 32);
 }
-static int16_t clamp16(int32_t v) {
-    return v > 32767 ? 32767 : v < -32768 ? -32768 : v;
-}
-
 static void capabilities(void) {
     send_text("SPECINFO {\"continuous\":false,\"transports\":["
 #if CONFIG_IDF_TARGET_ESP32C2
@@ -150,13 +170,13 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
     put16(24, 0);
     frame[26] = log2n;
     frame[27] = 2;
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
     const uint32_t mean_log2 = det ? 0 : spectrum_mean_log2(merged);
 #else
     const float mean_scale = 1.0f / merged;
 #endif
     for (unsigned j = 0, bin = 0; j < n; j++) {
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
         frame[HEADER_BYTES + bin] =
             det ? spectrum_power_code(powers.maximum[j]) : spectrum_sum_power_code(powers.sum[j], mean_log2);
 #else
@@ -171,7 +191,7 @@ static size_t pack_spectrum(unsigned n, unsigned log2n, unsigned det, unsigned m
         bin ^= bit;
     }
     put32(HEADER_BYTES + n, esp_rom_crc32_le(0, frame, HEADER_BYTES + n));
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
     memset(&powers, 0, n * (det ? sizeof(powers.maximum[0]) : sizeof(powers.sum[0])));
 #else
     memset(&powers, 0, n * sizeof(float));
@@ -232,7 +252,16 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
     uint8_t gain = 0;
     uint64_t index = 0;
     spectrum_output_t out = {.frames = &frames, .progress = start};
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C5
+    /* chip.h exposes 16380 words plus four overrun canaries in RF SRAM.
+     * RF stays stopped while the windows are consumed, so no prefetch buffer
+     * or bank-ownership protocol is needed. State is local to this request. */
+    const unsigned snapshot_n = (16380u / n) * n;
+    const uint32_t *snapshot = NULL;
+    unsigned snapshot_at = snapshot_n;
+    uint64_t snapshot_index = 0;
+#endif
+#if SPECTRUM_INTEGER_POWER
     memset(&powers, 0, n * (det ? sizeof(powers.maximum[0]) : sizeof(powers.sum[0])));
 #else
     memset(&powers, 0, n * sizeof(float));
@@ -243,22 +272,37 @@ bool spectrum_command(const char *line, unsigned frequency_mhz, spectrum_acquire
             break;
         }
         uint32_t busy_start = esp_cpu_get_cycle_count();
-        if (!merged) index = (uint64_t)(esp_timer_get_time() - start) * rate_hz(rate) / 1000000u;
         const uint32_t *words;
         unsigned elapsed;
+#if CONFIG_IDF_TARGET_ESP32C5
+        if (snapshot_at == snapshot_n) {
+            snapshot_index = (uint64_t)(esp_timer_get_time() - start) * rate_hz(rate) / 1000000u;
+            if (!acquire(snapshot_n, rate, &snapshot, &elapsed)) {
+                status = 1;
+                break;
+            }
+            snapshot_at = 0;
+        }
+        words = snapshot + snapshot_at;
+        if (!merged) index = snapshot_index + snapshot_at;
+        snapshot_at += n;
+#else
+        if (!merged) index = (uint64_t)(esp_timer_get_time() - start) * rate_hz(rate) / 1000000u;
         if (!acquire(n, rate, &words, &elapsed)) {
             status = 1;
             break;
         }
+#endif
         if (!merged) gain = words[0] >> 20;
         for (unsigned j = 0; j < n; j++) {
             int32_t i = ((int32_t)(words[j] << 22) >> 22), q = ((int32_t)(words[j] << 12) >> 22);
-            fft_data[2 * j] = clamp16((i * window[j]) >> 9);
-            fft_data[2 * j + 1] = clamp16((q * window[j]) >> 9);
+            /* IQ10 times a nonnegative Q15 Hann fits int16 without clipping. */
+            fft_data[2 * j] = (int16_t)((i * window[j]) >> 9);
+            fft_data[2 * j + 1] = (int16_t)((q * window[j]) >> 9);
         }
         spectrum_fft_poll(fft_data, n, dsps_fft_w_table_sc16, pump_spectrum, &out);
         spectrum_dc_apply(&dc, fft_data, n);
-#if CONFIG_IDF_TARGET_ESP32C6
+#if SPECTRUM_INTEGER_POWER
         if (det) {
             for (unsigned j = 0; j < n; j++) {
                 uint32_t p = spectrum_complex_power(fft_data[2 * j], fft_data[2 * j + 1]);
