@@ -3,9 +3,12 @@
 import argparse
 import json
 from pathlib import Path
+import sys
 import time
 import zlib
 import serial
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[3] / 'tools'))
 from check_spectrum import check, command, exact, synchronize
 
 

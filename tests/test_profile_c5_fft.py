@@ -79,7 +79,7 @@ class ProfileC5FFT(unittest.TestCase):
     def run_tool(self, path, port, profile):
         fake_serial = types.SimpleNamespace(Serial=lambda **kwargs: port)
         with patch.dict(sys.modules, serial=fake_serial), patch.object(sys, 'path', [str(ROOT / 'tools')] + sys.path):
-            spec = importlib.util.spec_from_file_location('profile_c5_fft_check', ROOT / 'tools/profile_c5_fft.py')
+            spec = importlib.util.spec_from_file_location('profile_c5_fft_check', ROOT / 'docs/features/c5_fft_optim/profile_c5_fft.py')
             tool = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(tool)
             args = ['profile_c5_fft.py', '--port', 'fake', '--output', str(path),
