@@ -1,0 +1,843 @@
+{
+  "phase1": {
+    "selected_utc": "2026-10-21T12:40:17.584603+00:00",
+    "gain_index": 20,
+    "calibration_offset_db": -6.823642722734633,
+    "calibration_anchor": {
+      "phase": "gain_search",
+      "rf_mhz": 2450,
+      "expected_input_dbm": -30
+    },
+    "formula": "inferred DUT input dBm = integrated tone dBFS + calibration_offset_db",
+    "criterion": "Widest 2450 MHz linear range with >=15 dB SNR, <=0.5 dB block peak-to-peak and +/-2 dB error; choose greater weak-signal SNR among full-range gains, retaining at least 2 dB measured full-scale headroom. Confirm at 2400/2450/2500 MHz before full band validation.",
+    "pilot_results": [
+      {
+        "gain_index": 10,
+        "calibration_offset_db": 3.0327779791352967,
+        "pilot_max_abs_error_db": 1.9395088179796005,
+        "pilot_min_snr_db": 12.303328508425038,
+        "pilot_max_block_peak_to_peak_db": 0.2602946117933058,
+        "pilot_max_tone_dbfs": -12.61102278752075
+      },
+      {
+        "gain_index": 20,
+        "calibration_offset_db": -6.823642722734633,
+        "pilot_max_abs_error_db": 0.6395926837182984,
+        "pilot_min_snr_db": 24.124328517025692,
+        "pilot_max_block_peak_to_peak_db": 0.1895484423543854,
+        "pilot_max_tone_dbfs": -2.6768195394797583
+      }
+    ]
+  },
+  "phase1_levels": {
+    "selected_utc": "2026-10-21T12:46:00.980537+00:00",
+    "gain_index": 20,
+    "expected_input_dbm": [
+      -30.0,
+      -15.0
+    ],
+    "criterion": "Among levels passing all 11 working-band points, sort by smallest worst-frequency within-capture five-block peak-to-peak variation, then worst block standard deviation. No extended-band data used.",
+    "working_band_ranking": [
+      {
+        "expected_input_dbm": -30.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.4769478914861338,
+        "mean_error_db": -0.12172016201677914,
+        "max_block_peak_to_peak_db": 0.030240328394089744,
+        "max_block_std_db": 0.013113810510254295,
+        "min_snr_db": 36.57437223003847
+      },
+      {
+        "expected_input_dbm": -15.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.9855045667836322,
+        "mean_error_db": 0.3655572159797506,
+        "max_block_peak_to_peak_db": 0.05351222641792219,
+        "max_block_std_db": 0.021066182306430436,
+        "min_snr_db": 50.33750007992539
+      },
+      {
+        "expected_input_dbm": -10.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.5071909295984369,
+        "mean_error_db": 0.4420166904920995,
+        "max_block_peak_to_peak_db": 0.07417019984344009,
+        "max_block_std_db": 0.02819644053886933,
+        "min_snr_db": 51.18411668656134
+      },
+      {
+        "expected_input_dbm": -45.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.30311127756318257,
+        "mean_error_db": -0.0691549357685659,
+        "max_block_peak_to_peak_db": 0.0960702879902513,
+        "max_block_std_db": 0.039424360142253916,
+        "min_snr_db": 17.778710071885964
+      },
+      {
+        "expected_input_dbm": -25.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.49228706591655325,
+        "mean_error_db": 0.0179814649374221,
+        "max_block_peak_to_peak_db": 0.09922889864618867,
+        "max_block_std_db": 0.0379782029082296,
+        "min_snr_db": 41.27277184165625
+      },
+      {
+        "expected_input_dbm": -35.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.6886367704587499,
+        "mean_error_db": -0.5052071459190036,
+        "max_block_peak_to_peak_db": 0.10292754291225492,
+        "max_block_std_db": 0.043290468621141456,
+        "min_snr_db": 31.54931893262801
+      },
+      {
+        "expected_input_dbm": -20.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.9862815008586736,
+        "mean_error_db": 0.3492969131601853,
+        "max_block_peak_to_peak_db": 0.11492563845636816,
+        "max_block_std_db": 0.05044833443685556,
+        "min_snr_db": 46.663607092583284
+      },
+      {
+        "expected_input_dbm": -40.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.675341309218183,
+        "mean_error_db": -0.26672967491167365,
+        "max_block_peak_to_peak_db": 0.22648327394924905,
+        "max_block_std_db": 0.08687639922603385,
+        "min_snr_db": 24.375569233591456
+      },
+      {
+        "expected_input_dbm": -50.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.43943117919750563,
+        "mean_error_db": 0.04078465604383361,
+        "max_block_peak_to_peak_db": 0.25438943548349613,
+        "max_block_std_db": 0.10654469423582284,
+        "min_snr_db": 15.062957346426689
+      }
+    ]
+  },
+  "phase2": {
+    "selected_utc": "2026-10-21T13:14:55.987777+00:00",
+    "gain_index": 80,
+    "attenuator_db": 50,
+    "snr_threshold_db": 15,
+    "required_on_off_excess_db": 10,
+    "criterion": "Weakest 2450 MHz coarse level passing >=15 dB SNR in all five blocks, <=150 kHz frequency error and >=10 dB raw integrated on/off contrast; tie-break by lower block power standard deviation at that edge. Confirm thresholds with three captures per frequency. Amplitude stability is reported, not a CW detection gate.",
+    "gain_comparison": [
+      {
+        "gain_index": 0,
+        "weakest_coarse_pass_dbm": null,
+        "edge_block_std_db": null,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -11.475450353331444,
+            "on_off_excess_db": 0.14160783463300847,
+            "block_std_db": 0.5952392307900991,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -14.499047921482235,
+            "on_off_excess_db": 0.030880396077945408,
+            "block_std_db": 2.248821276403835,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -14.44516564389956,
+            "on_off_excess_db": -0.2666106292050622,
+            "block_std_db": 3.5316233359722213,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": -13.197621963291951,
+            "on_off_excess_db": 0.35708827608744714,
+            "block_std_db": 3.032478840634177,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": -33.01667316285605,
+            "on_off_excess_db": 4.598643579016864,
+            "block_std_db": 2.623651159208927,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": -13.17423576567926,
+            "on_off_excess_db": 0.37912686932831263,
+            "block_std_db": 0.7588282654155946,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": -37.32963707153441,
+            "on_off_excess_db": 8.392769107665359,
+            "block_std_db": 1.5831608021958146,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": -12.20400642915755,
+            "on_off_excess_db": 4.688409163158239,
+            "block_std_db": 0.2185173429909193,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 0.12461376943181796,
+            "on_off_excess_db": 9.15895231640228,
+            "block_std_db": 0.3102433511123864,
+            "candidate_pass": false
+          }
+        ]
+      },
+      {
+        "gain_index": 10,
+        "weakest_coarse_pass_dbm": null,
+        "edge_block_std_db": null,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -12.139475880488003,
+            "on_off_excess_db": -1.5744438809602155,
+            "block_std_db": 1.1369353671986615,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -12.784190622254261,
+            "on_off_excess_db": 0.5864272416569549,
+            "block_std_db": 5.545359791079555,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -11.16805037597234,
+            "on_off_excess_db": 0.5302023834425372,
+            "block_std_db": 4.858660457932521,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": -9.93487277909204,
+            "on_off_excess_db": 0.28509966283982996,
+            "block_std_db": 3.4638417261722356,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": -30.51900287731963,
+            "on_off_excess_db": 4.1102559048920355,
+            "block_std_db": 7.919280748659544,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": -0.05209304817904746,
+            "on_off_excess_db": 1.3432236041735657,
+            "block_std_db": 0.10618088005458412,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 5.838011281034693,
+            "on_off_excess_db": 5.246950366704199,
+            "block_std_db": 0.1426529184392624,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 5.1463882721269965,
+            "on_off_excess_db": 10.508769520112931,
+            "block_std_db": 0.34228041135421966,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 14.847511931986093,
+            "on_off_excess_db": 15.794003511202778,
+            "block_std_db": 0.17038075284556475,
+            "candidate_pass": false
+          }
+        ]
+      },
+      {
+        "gain_index": 20,
+        "weakest_coarse_pass_dbm": -60.0,
+        "edge_block_std_db": 0.07676238652420381,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -10.540433671140931,
+            "on_off_excess_db": 4.521179998723545,
+            "block_std_db": 7.642626052964445,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -9.949721016716516,
+            "on_off_excess_db": 6.368731112456269,
+            "block_std_db": 7.966589311670764,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -11.643708831372132,
+            "on_off_excess_db": 7.732783985590649,
+            "block_std_db": 8.28114486228619,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": -2.6359741040073765,
+            "on_off_excess_db": 6.655889472424329,
+            "block_std_db": 3.9835922678607547,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 0.3213252892823363,
+            "on_off_excess_db": 6.750136063058829,
+            "block_std_db": 1.5423626311326346,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 9.428213560545597,
+            "on_off_excess_db": 9.531872183647017,
+            "block_std_db": 0.1113319166404763,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 15.152837574695388,
+            "on_off_excess_db": 14.852920493005264,
+            "block_std_db": 0.07676238652420381,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 19.949692990482227,
+            "on_off_excess_db": 19.874052335163682,
+            "block_std_db": 0.15782578750651874,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 14.603751957285453,
+            "on_off_excess_db": 25.18331402288473,
+            "block_std_db": 0.10452521228779277,
+            "candidate_pass": false
+          }
+        ]
+      },
+      {
+        "gain_index": 30,
+        "weakest_coarse_pass_dbm": -60.0,
+        "edge_block_std_db": 0.08279163339544489,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -17.08779339293027,
+            "on_off_excess_db": 15.716247243374593,
+            "block_std_db": 15.429498425037217,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -15.4174901798717,
+            "on_off_excess_db": 15.861982813546964,
+            "block_std_db": 15.369587940958207,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -13.340731010839457,
+            "on_off_excess_db": 9.066672892738397,
+            "block_std_db": 15.228608067327855,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": -0.8545150326138439,
+            "on_off_excess_db": 8.407514171717526,
+            "block_std_db": 4.667677614185153,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 16.27065289686446,
+            "on_off_excess_db": 6.536234968547062,
+            "block_std_db": 0.07835218500922464,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 12.457467709250396,
+            "on_off_excess_db": 11.873723923239453,
+            "block_std_db": 0.06503853413350742,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 28.21789766329153,
+            "on_off_excess_db": 17.301240491803846,
+            "block_std_db": 0.08279163339544489,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 14.764741436371944,
+            "on_off_excess_db": 22.226094106621893,
+            "block_std_db": 0.11839395309919465,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 18.54272712076123,
+            "on_off_excess_db": 27.35463273241914,
+            "block_std_db": 0.026743858663740353,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 40,
+        "weakest_coarse_pass_dbm": -60.0,
+        "edge_block_std_db": 0.022902919612736945,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -10.69809942068076,
+            "on_off_excess_db": 4.087233600950638,
+            "block_std_db": 14.741870514791911,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -8.286995956338721,
+            "on_off_excess_db": 2.728448964304059,
+            "block_std_db": 8.772313929233844,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -6.013703896100669,
+            "on_off_excess_db": 3.5582470083004836,
+            "block_std_db": 5.552893342494682,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": -5.336390434547839,
+            "on_off_excess_db": 8.626722551924473,
+            "block_std_db": 4.8149413102129515,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 20.855055051543165,
+            "on_off_excess_db": 3.53570660214354,
+            "block_std_db": 0.11141232162271124,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 26.03671435225873,
+            "on_off_excess_db": 8.665059679814462,
+            "block_std_db": 0.06164511375098884,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 24.597709542006974,
+            "on_off_excess_db": 13.904114751103851,
+            "block_std_db": 0.022902919612736945,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 14.123241748522231,
+            "on_off_excess_db": 18.998798157128522,
+            "block_std_db": 0.0963536672728401,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 17.250785749060867,
+            "on_off_excess_db": 23.986644313693418,
+            "block_std_db": 0.021014917920050304,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 50,
+        "weakest_coarse_pass_dbm": -65.0,
+        "edge_block_std_db": 0.20237642251342397,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -9.320436771884482,
+            "on_off_excess_db": -1.877900330815948,
+            "block_std_db": 5.212434962736696,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -8.37081180236119,
+            "on_off_excess_db": -0.567219657655338,
+            "block_std_db": 3.6271097313010077,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": -0.807544117570469,
+            "on_off_excess_db": -1.7400852276314407,
+            "block_std_db": 0.8969604263627926,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": 2.091545019491605,
+            "on_off_excess_db": 2.3162873113163176,
+            "block_std_db": 0.20183837903228039,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 21.027372580490944,
+            "on_off_excess_db": 6.252573769143382,
+            "block_std_db": 0.10373777024796622,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 18.179228905444806,
+            "on_off_excess_db": 11.30368863495308,
+            "block_std_db": 0.20237642251342397,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 16.12691311373704,
+            "on_off_excess_db": 16.733516607607754,
+            "block_std_db": 0.14013257796697715,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 15.312631530148275,
+            "on_off_excess_db": 21.61322679741277,
+            "block_std_db": 0.1736753125364412,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 23.34721228145087,
+            "on_off_excess_db": 27.004436737472993,
+            "block_std_db": 0.011130481197832538,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 60,
+        "weakest_coarse_pass_dbm": -70.0,
+        "edge_block_std_db": 0.17066872758496593,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": -8.335661181207145,
+            "on_off_excess_db": 0.3154892226476431,
+            "block_std_db": 4.775706746522808,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": -0.8227460548355197,
+            "on_off_excess_db": 2.6579528030145134,
+            "block_std_db": 4.536352154988181,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": 0.0056448941212056776,
+            "on_off_excess_db": 1.339291737037562,
+            "block_std_db": 1.0363521391838963,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": 3.2630230243469276,
+            "on_off_excess_db": 5.381365588076203,
+            "block_std_db": 1.2088437748635816,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 15.9790953129651,
+            "on_off_excess_db": 11.59925486016718,
+            "block_std_db": 0.17066872758496593,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 16.743747446919294,
+            "on_off_excess_db": 16.35503887480191,
+            "block_std_db": 0.6696086810426796,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 22.247278185688618,
+            "on_off_excess_db": 21.817070563522666,
+            "block_std_db": 0.05558860730003632,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 25.452816048705245,
+            "on_off_excess_db": 26.16118566660543,
+            "block_std_db": 0.6600986749842773,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 30.295983910811124,
+            "on_off_excess_db": 31.32358138583195,
+            "block_std_db": 0.8950891900121235,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 70,
+        "weakest_coarse_pass_dbm": -75.0,
+        "edge_block_std_db": 0.44755864648372695,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": 8.873596371439747,
+            "on_off_excess_db": 6.610957315584484,
+            "block_std_db": 1.4118427833561678,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": 8.096543861124598,
+            "on_off_excess_db": 7.13536212537028,
+            "block_std_db": 2.8328279809751953,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": 12.556081293100501,
+            "on_off_excess_db": 7.938448469645022,
+            "block_std_db": 0.9449857596866263,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": 15.337324010366029,
+            "on_off_excess_db": 10.907570644976213,
+            "block_std_db": 0.44755864648372695,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 18.08941003848014,
+            "on_off_excess_db": 14.490928059385286,
+            "block_std_db": 0.773329125895377,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 19.950282084843266,
+            "on_off_excess_db": 19.083018238892283,
+            "block_std_db": 1.6525716446834444,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 23.52868116555461,
+            "on_off_excess_db": 24.424181510479652,
+            "block_std_db": 0.4377743448477799,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 25.465178330351193,
+            "on_off_excess_db": 28.110361582385643,
+            "block_std_db": 0.9136485621470352,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 27.423822314946467,
+            "on_off_excess_db": 29.223257768468656,
+            "block_std_db": 2.2826884840204174,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 80,
+        "weakest_coarse_pass_dbm": -75.0,
+        "edge_block_std_db": 0.29910231384889424,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": 10.338138916514074,
+            "on_off_excess_db": 3.247438832494755,
+            "block_std_db": 0.48599360711071893,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": 9.145383505510031,
+            "on_off_excess_db": 4.150360599030395,
+            "block_std_db": 1.1838051885597456,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": 17.299101076373308,
+            "on_off_excess_db": 8.167360475007209,
+            "block_std_db": 0.3484618632461157,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": 17.41530703625014,
+            "on_off_excess_db": 11.761741075046627,
+            "block_std_db": 0.29910231384889424,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 22.676460019751815,
+            "on_off_excess_db": 17.003148368354267,
+            "block_std_db": 0.527987364417463,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 24.83291964535766,
+            "on_off_excess_db": 20.135529919916195,
+            "block_std_db": 1.1655106254692582,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 28.153913788088115,
+            "on_off_excess_db": 23.023647038283134,
+            "block_std_db": 0.9552474364294294,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 28.39670840312005,
+            "on_off_excess_db": 23.22306197471175,
+            "block_std_db": 0.8866192297382353,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 26.44049996321508,
+            "on_off_excess_db": 23.73588574460122,
+            "block_std_db": 0.9487061922361281,
+            "candidate_pass": true
+          }
+        ]
+      },
+      {
+        "gain_index": 82,
+        "weakest_coarse_pass_dbm": -75.0,
+        "edge_block_std_db": 0.38527380708803366,
+        "points": [
+          {
+            "input_dbm": -90.0,
+            "min_block_snr_db": 6.544305251860232,
+            "on_off_excess_db": 1.0482961611939448,
+            "block_std_db": 1.2716780738348124,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -85.0,
+            "min_block_snr_db": 12.855676454240534,
+            "on_off_excess_db": 4.037917162509404,
+            "block_std_db": 0.24265403930274052,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -80.0,
+            "min_block_snr_db": 12.77888742274411,
+            "on_off_excess_db": 6.933390820837162,
+            "block_std_db": 0.9606747830467455,
+            "candidate_pass": false
+          },
+          {
+            "input_dbm": -75.0,
+            "min_block_snr_db": 18.983981808466936,
+            "on_off_excess_db": 11.442494282487026,
+            "block_std_db": 0.38527380708803366,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -70.0,
+            "min_block_snr_db": 21.110650833076328,
+            "on_off_excess_db": 16.33876919584532,
+            "block_std_db": 0.487233182047345,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -65.0,
+            "min_block_snr_db": 28.51651919762614,
+            "on_off_excess_db": 19.71714522327916,
+            "block_std_db": 0.5785385512854735,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -60.0,
+            "min_block_snr_db": 28.03374953315012,
+            "on_off_excess_db": 20.87595061230076,
+            "block_std_db": 0.4839035557098983,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -55.0,
+            "min_block_snr_db": 31.583466184349135,
+            "on_off_excess_db": 21.71056297735131,
+            "block_std_db": 0.22452396081688436,
+            "candidate_pass": true
+          },
+          {
+            "input_dbm": -50.0,
+            "min_block_snr_db": 29.554381139019142,
+            "on_off_excess_db": 21.7602771990191,
+            "block_std_db": 0.7131237194896999,
+            "candidate_pass": true
+          }
+        ]
+      }
+    ]
+  }
+}

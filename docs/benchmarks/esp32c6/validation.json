@@ -1,0 +1,5653 @@
+{
+  "phase1": {
+    "generated_utc": "2026-10-28T16:14:12.266112+00:00",
+    "replay_runs": [
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_controls_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_band_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_coarse",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_fine5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_gain_search_final5",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_selection_verify",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_working_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_extended_band",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      }
+    ],
+    "checks": {
+      "captures": {
+        "c6_gain_search_coarse": 36,
+        "c6_gain_search_fine5": 20,
+        "c6_gain_search_final5": 45,
+        "c6_selection_verify": 9,
+        "c6_working_band": 33,
+        "c6_extended_band": 45,
+        "c6_gain_controls_coarse": 9,
+        "c6_gain_controls_fine5": 5,
+        "c6_band_controls": 23
+      },
+      "measurement_frames": 41352,
+      "measurement_ffts": 41352,
+      "control_frames": 9581,
+      "control_ffts": 9581,
+      "replay_runs": 225,
+      "max_replayed_metric_difference": 0.0,
+      "max_replayed_on_off_difference_db": 0.0,
+      "all_reports_match": true,
+      "all_shapes_ok": true,
+      "all_gain_metadata_ok": true,
+      "all_frame_accounting_ok": true,
+      "selection_precedes_band": true,
+      "final_state_passed": true
+    },
+    "final_state": {
+      "utc": "2026-10-28T16:13:17.059158+00:00",
+      "phase": "final_state_phase1",
+      "before": {
+        "INFO": "C6SDR 6 burst 16380",
+        "VERSION?": "VERSION {\"revision\":\"9b61e7465bee6da15209c5c09308043d08c46a1d\",\"build_date\":\"2026-10-26\",\"build_timestamp\":\"2026-10-26T21:26:32Z\",\"profile\":\"esp32c6\"}",
+        "GAIN?": "GAIN HARDWARE -1 0 79 0",
+        "LPF?": "ERR command",
+        "ALPF?": "ALPF -1 28 28",
+        "DC?": "DC 1",
+        "TRANSPORT?": "TRANSPORT USB 0"
+      },
+      "reassert_gain": "OK",
+      "after_gain_query": "GAIN MANUAL 21 0 79 1",
+      "alpf_auto": "OK",
+      "dc_set": "OK",
+      "after": {
+        "INFO": "C6SDR 6 burst 16380",
+        "GAIN?": "GAIN MANUAL 21 0 79 1",
+        "ALPF?": "ALPF -1 28 28",
+        "DC?": "DC 1"
+      },
+      "release": "OK",
+      "generator_before": {
+        "output_enabled": false,
+        "level_dbm": 0.0,
+        "center_frequency_hz": 2950000000.0,
+        "span_hz": 0.0,
+        "sweep_time_s": 0.001,
+        "continuous": false
+      },
+      "generator_after": {
+        "output_enabled": false,
+        "level_dbm": 0.0,
+        "center_frequency_hz": 2950000000.0,
+        "span_hz": 0.0,
+        "sweep_time_s": 0.001,
+        "continuous": false
+      },
+      "generator_errors": [],
+      "passed": true
+    }
+  },
+  "phase2": {
+    "generated_utc": "2026-10-28T16:41:52.687833+00:00",
+    "replay_runs": [
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_gain_search",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "phase": "c6_pad50_sensitivity_controls",
+        "max_metric_difference": 0.0,
+        "on_off_difference_db": null,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      }
+    ],
+    "fft_replay": [
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      },
+      {
+        "max_metric_difference": 0.0,
+        "report_matches": true,
+        "shape_ok": true,
+        "gain_metadata_ok": true,
+        "frame_accounting_ok": true
+      }
+    ],
+    "adc_replay": [
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      },
+      {
+        "payload_crc_ok": true,
+        "iq_match": true
+      }
+    ],
+    "checks": {
+      "phase2_capture_counts": {
+        "gain_coarse": 36,
+        "sensitivity": 288,
+        "controls": 23,
+        "raw_adc": 48,
+        "fft_profiles": 12
+      },
+      "spectrum_frames": 82377,
+      "spectrum_ffts": 82377,
+      "replay_runs": 368,
+      "max_replayed_metric_difference": 0.0,
+      "max_replayed_on_off_difference_db": 0.0,
+      "all_reports_match": true,
+      "all_shapes_ok": true,
+      "all_gain_metadata_ok": true,
+      "all_frame_accounting_ok": true,
+      "adc_replay_runs": 48,
+      "adc_all_iq_match": true,
+      "selection_precedes_sensitivity": true,
+      "final_state_passed": true
+    },
+    "final_state": {
+      "utc": "2026-10-28T16:41:02.863627+00:00",
+      "phase": "final_state_phase2",
+      "before": {
+        "INFO": "C6SDR 6 burst 16380",
+        "VERSION?": "VERSION {\"revision\":\"9b61e7465bee6da15209c5c09308043d08c46a1d\",\"build_date\":\"2026-10-26\",\"build_timestamp\":\"2026-10-26T21:26:32Z\",\"profile\":\"esp32c6\"}",
+        "GAIN?": "GAIN HARDWARE -1 0 79 0",
+        "LPF?": "ERR command",
+        "ALPF?": "ALPF -1 28 28",
+        "DC?": "DC 1",
+        "TRANSPORT?": "TRANSPORT USB 0"
+      },
+      "reassert_gain": "OK",
+      "after_gain_query": "GAIN MANUAL 30 0 79 1",
+      "alpf_auto": "OK",
+      "dc_set": "OK",
+      "after": {
+        "INFO": "C6SDR 6 burst 16380",
+        "GAIN?": "GAIN MANUAL 30 0 79 1",
+        "ALPF?": "ALPF -1 28 28",
+        "DC?": "DC 1"
+      },
+      "release": "OK",
+      "generator_before": {
+        "output_enabled": false,
+        "level_dbm": 0.0,
+        "center_frequency_hz": 2450000000.0,
+        "span_hz": 0.0,
+        "sweep_time_s": 0.001,
+        "continuous": false
+      },
+      "generator_after": {
+        "output_enabled": false,
+        "level_dbm": 0.0,
+        "center_frequency_hz": 2450000000.0,
+        "span_hz": 0.0,
+        "sweep_time_s": 0.001,
+        "continuous": false
+      },
+      "generator_errors": [],
+      "passed": true
+    }
+  }
+}

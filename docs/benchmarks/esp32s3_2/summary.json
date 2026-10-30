@@ -1,0 +1,2036 @@
+{
+  "phase1": {
+    "generated_utc": "2026-10-28T15:20:15.505736+00:00",
+    "device": {
+      "info": "S3SDR 6 burst 16380",
+      "version": {
+        "revision": "9b61e7465bee6da15209c5c09308043d08c46a1d",
+        "build_date": "2026-10-26",
+        "build_timestamp": "2026-10-26T21:26:29Z",
+        "profile": "esp32s3"
+      },
+      "serial": "A0:F2:62:F3:A1:8C",
+      "limits": {
+        "gain": [
+          0,
+          82,
+          1
+        ],
+        "bandwidth": [
+          13,
+          69,
+          1,
+          0
+        ],
+        "rates": [
+          80000000,
+          40000000,
+          16000000
+        ],
+        "bits": [
+          8,
+          10
+        ]
+      },
+      "profile": [
+        80000000,
+        0,
+        2048,
+        14,
+        30
+      ]
+    },
+    "selection": {
+      "gain_index": 20,
+      "offset_db": -4.1754406933125985,
+      "full_range_and_headroom_candidates": [
+        20
+      ],
+      "band_powers_dbm": [
+        -50.0,
+        -30.0,
+        -10.0
+      ],
+      "rationale": "Gain 20 was the only gain meeting the full -50..-10 dBm range with all gates and at least 2 dB headroom. Gain 25 also covered the full range but had only 0.37 dB headroom at -10 dBm."
+    },
+    "gain_search": {
+      "captures": 153,
+      "comparison": [
+        {
+          "gain_index": 0,
+          "anchor_usable": false,
+          "one_point_offset_db": null,
+          "longest_contiguous_range_dbm": [],
+          "range_span_db": 0.0,
+          "range_points": 0,
+          "headroom_db": null,
+          "min_snr_in_range_db": null,
+          "passing_inputs_dbm": []
+        },
+        {
+          "gain_index": 5,
+          "anchor_usable": true,
+          "one_point_offset_db": 9.983529402676908,
+          "longest_contiguous_range_dbm": [
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ],
+          "range_span_db": 25.0,
+          "range_points": 6,
+          "headroom_db": 19.848115587126514,
+          "min_snr_in_range_db": 23.70875934481585,
+          "passing_inputs_dbm": [
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ]
+        },
+        {
+          "gain_index": 10,
+          "anchor_usable": true,
+          "one_point_offset_db": 5.402336298520844,
+          "longest_contiguous_range_dbm": [
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ],
+          "range_span_db": 30.0,
+          "range_points": 7,
+          "headroom_db": 15.741365608829874,
+          "min_snr_in_range_db": 24.197277284182164,
+          "passing_inputs_dbm": [
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ]
+        },
+        {
+          "gain_index": 15,
+          "anchor_usable": true,
+          "one_point_offset_db": 0.8250208049237244,
+          "longest_contiguous_range_dbm": [
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ],
+          "range_span_db": 35.0,
+          "range_points": 8,
+          "headroom_db": 10.820784897455137,
+          "min_snr_in_range_db": 20.351853134037874,
+          "passing_inputs_dbm": [
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ]
+        },
+        {
+          "gain_index": 20,
+          "anchor_usable": true,
+          "one_point_offset_db": -4.1754406933125985,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ],
+          "range_span_db": 40.0,
+          "range_points": 9,
+          "headroom_db": 5.402965174186601,
+          "min_snr_in_range_db": 20.756258667784792,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ]
+        },
+        {
+          "gain_index": 25,
+          "anchor_usable": true,
+          "one_point_offset_db": -9.170938734944016,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ],
+          "range_span_db": 40.0,
+          "range_points": 9,
+          "headroom_db": 0.3655001997453894,
+          "min_snr_in_range_db": 20.941023372006697,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0,
+            -10.0
+          ]
+        },
+        {
+          "gain_index": 30,
+          "anchor_usable": true,
+          "one_point_offset_db": -15.984567396080337,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0
+          ],
+          "range_span_db": 35.0,
+          "range_points": 8,
+          "headroom_db": -0.6589866085841317,
+          "min_snr_in_range_db": 22.84540854193221,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0,
+            -15.0
+          ]
+        },
+        {
+          "gain_index": 35,
+          "anchor_usable": true,
+          "one_point_offset_db": -20.184583520118153,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0
+          ],
+          "range_span_db": 30.0,
+          "range_points": 7,
+          "headroom_db": -0.18166756526842165,
+          "min_snr_in_range_db": 28.4916866278105,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0,
+            -20.0
+          ]
+        },
+        {
+          "gain_index": 40,
+          "anchor_usable": true,
+          "one_point_offset_db": -25.213939690486207,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0
+          ],
+          "range_span_db": 25.0,
+          "range_points": 6,
+          "headroom_db": -0.17007200189382105,
+          "min_snr_in_range_db": 25.902984952118068,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0,
+            -25.0
+          ]
+        },
+        {
+          "gain_index": 45,
+          "anchor_usable": true,
+          "one_point_offset_db": -29.998491299209565,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ],
+          "range_span_db": 20.0,
+          "range_points": 5,
+          "headroom_db": 0.0015087007904349833,
+          "min_snr_in_range_db": 26.366394047587235,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 50,
+          "anchor_usable": true,
+          "one_point_offset_db": -28.125909731149818,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ],
+          "range_span_db": 20.0,
+          "range_points": 5,
+          "headroom_db": 1.8740902688501826,
+          "min_snr_in_range_db": 27.55875358493239,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 55,
+          "anchor_usable": true,
+          "one_point_offset_db": -30.857319048044282,
+          "longest_contiguous_range_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ],
+          "range_span_db": 20.0,
+          "range_points": 5,
+          "headroom_db": -0.8573190480442815,
+          "min_snr_in_range_db": 26.856959038861525,
+          "passing_inputs_dbm": [
+            -50.0,
+            -45.0,
+            -40.0,
+            -35.0,
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 60,
+          "anchor_usable": true,
+          "one_point_offset_db": -31.330220871324585,
+          "longest_contiguous_range_dbm": [
+            -30.0
+          ],
+          "range_span_db": 0.0,
+          "range_points": 1,
+          "headroom_db": -1.330220871324585,
+          "min_snr_in_range_db": 39.925003130607905,
+          "passing_inputs_dbm": [
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 65,
+          "anchor_usable": true,
+          "one_point_offset_db": -31.580533435511995,
+          "longest_contiguous_range_dbm": [
+            -30.0
+          ],
+          "range_span_db": 0.0,
+          "range_points": 1,
+          "headroom_db": -1.580533435511994,
+          "min_snr_in_range_db": 38.93157562223791,
+          "passing_inputs_dbm": [
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 70,
+          "anchor_usable": true,
+          "one_point_offset_db": -31.599652684006458,
+          "longest_contiguous_range_dbm": [
+            -30.0
+          ],
+          "range_span_db": 0.0,
+          "range_points": 1,
+          "headroom_db": -1.599652684006456,
+          "min_snr_in_range_db": 37.86083483964629,
+          "passing_inputs_dbm": [
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 75,
+          "anchor_usable": true,
+          "one_point_offset_db": -31.600013497550037,
+          "longest_contiguous_range_dbm": [
+            -30.0
+          ],
+          "range_span_db": 0.0,
+          "range_points": 1,
+          "headroom_db": -1.6000134975500369,
+          "min_snr_in_range_db": 35.629929959661915,
+          "passing_inputs_dbm": [
+            -30.0
+          ]
+        },
+        {
+          "gain_index": 80,
+          "anchor_usable": true,
+          "one_point_offset_db": -31.598852404431224,
+          "longest_contiguous_range_dbm": [
+            -30.0
+          ],
+          "range_span_db": 0.0,
+          "range_points": 1,
+          "headroom_db": -1.598852404431224,
+          "min_snr_in_range_db": 35.07920993525215,
+          "passing_inputs_dbm": [
+            -30.0
+          ]
+        }
+      ]
+    },
+    "working_band": {
+      "captures": 33,
+      "valid_captures": 31,
+      "all_gates": false,
+      "all_power_within_2db": true,
+      "passing_captures": 31,
+      "worst_abs_error_db": 1.021863683344506,
+      "gate_failures": [
+        {
+          "rf_mhz": 2410,
+          "input_dbm": -50.0,
+          "snr_db": 14.489894199955945,
+          "on_off_db": 9.559660065601745,
+          "p2p_db": 0.08348994910905105
+        },
+        {
+          "rf_mhz": 2460,
+          "input_dbm": -50.0,
+          "snr_db": 9.715107136726967,
+          "on_off_db": 8.380056910138709,
+          "p2p_db": 0.06852196598170934
+        }
+      ],
+      "by_level": {
+        "-50": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [
+            2410,
+            2460
+          ],
+          "working_max_abs_error_db": 1.021863683344506,
+          "working_within_2db_mhz": [
+            2400,
+            2420,
+            2430,
+            2440,
+            2450,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 7.719915364669092,
+          "extended_within_2db_frequencies_mhz": [
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2200,
+              2600
+            ]
+          ]
+        },
+        "-30": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [],
+          "working_max_abs_error_db": 0.5523503512343453,
+          "working_within_2db_mhz": [
+            2400,
+            2410,
+            2420,
+            2430,
+            2440,
+            2450,
+            2460,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 6.38934621422672,
+          "extended_within_2db_frequencies_mhz": [
+            2150,
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600,
+            2650
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2150,
+              2650
+            ]
+          ]
+        },
+        "-10": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [],
+          "working_max_abs_error_db": 0.3602234708249945,
+          "working_within_2db_mhz": [
+            2400,
+            2410,
+            2420,
+            2430,
+            2440,
+            2450,
+            2460,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 6.783700562808711,
+          "extended_within_2db_frequencies_mhz": [
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600,
+            2650,
+            2700
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2200,
+              2700
+            ]
+          ]
+        }
+      },
+      "frames": 15822,
+      "ffts": 190916
+    },
+    "selection_verify": {
+      "captures": 9,
+      "valid_captures": 9,
+      "all_gates": true,
+      "max_abs_error_db": 1.18329225236252
+    },
+    "extended_band_50mhz": {
+      "captures": 60,
+      "valid_captures": 48,
+      "all_gates": false,
+      "passing_captures": 31,
+      "worst_abs_error_valid_db": 7.719915364669092,
+      "gate_failures": [
+        {
+          "rf_mhz": 2800,
+          "input_dbm": -50.0,
+          "snr_db": -13.173083265277128
+        },
+        {
+          "rf_mhz": 2800,
+          "input_dbm": -30.0,
+          "snr_db": -14.234854218033153
+        },
+        {
+          "rf_mhz": 2800,
+          "input_dbm": -10.0,
+          "snr_db": -16.85335808614156
+        },
+        {
+          "rf_mhz": 2850,
+          "input_dbm": -50.0,
+          "snr_db": -26.028793451615414
+        },
+        {
+          "rf_mhz": 2850,
+          "input_dbm": -30.0,
+          "snr_db": -25.47941789259616
+        },
+        {
+          "rf_mhz": 2850,
+          "input_dbm": -10.0,
+          "snr_db": -22.594785520183876
+        },
+        {
+          "rf_mhz": 2900,
+          "input_dbm": -50.0,
+          "snr_db": -15.324046025259912
+        },
+        {
+          "rf_mhz": 2900,
+          "input_dbm": -30.0,
+          "snr_db": -11.72275682811005
+        },
+        {
+          "rf_mhz": 2900,
+          "input_dbm": -10.0,
+          "snr_db": -21.845468619112232
+        },
+        {
+          "rf_mhz": 2950,
+          "input_dbm": -50.0,
+          "snr_db": -11.693130046625138
+        },
+        {
+          "rf_mhz": 2950,
+          "input_dbm": -30.0,
+          "snr_db": -25.179449159813863
+        },
+        {
+          "rf_mhz": 2950,
+          "input_dbm": -10.0,
+          "snr_db": -25.03211745597116
+        }
+      ],
+      "by_level": {
+        "-50": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [
+            2410,
+            2460
+          ],
+          "working_max_abs_error_db": 1.021863683344506,
+          "working_within_2db_mhz": [
+            2400,
+            2420,
+            2430,
+            2440,
+            2450,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 7.719915364669092,
+          "extended_within_2db_frequencies_mhz": [
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2200,
+              2600
+            ]
+          ]
+        },
+        "-30": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [],
+          "working_max_abs_error_db": 0.5523503512343453,
+          "working_within_2db_mhz": [
+            2400,
+            2410,
+            2420,
+            2430,
+            2440,
+            2450,
+            2460,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 6.38934621422672,
+          "extended_within_2db_frequencies_mhz": [
+            2150,
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600,
+            2650
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2150,
+              2650
+            ]
+          ]
+        },
+        "-10": {
+          "working_captures": 11,
+          "working_gate_failures_mhz": [],
+          "working_max_abs_error_db": 0.3602234708249945,
+          "working_within_2db_mhz": [
+            2400,
+            2410,
+            2420,
+            2430,
+            2440,
+            2450,
+            2460,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "extended_gate_failures_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "extended_max_abs_error_db": 6.783700562808711,
+          "extended_within_2db_frequencies_mhz": [
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600,
+            2650,
+            2700
+          ],
+          "extended_within_2db_intervals_mhz": [
+            [
+              2200,
+              2700
+            ]
+          ]
+        }
+      },
+      "joint_2db_frequencies_mhz": [
+        2200,
+        2250,
+        2300,
+        2350,
+        2400,
+        2450,
+        2500,
+        2550,
+        2600
+      ],
+      "joint_2db_intervals_mhz": [
+        [
+          2200,
+          2600
+        ]
+      ],
+      "frames": 28756,
+      "ffts": 347134
+    },
+    "integrity": {
+      "captures": {
+        "gain_search": 153,
+        "selection_verify": 9,
+        "working_band": 33,
+        "extended_band_50mhz": 60,
+        "gain_controls": 17,
+        "band_controls": 28
+      },
+      "measurement_frames": 103965,
+      "measurement_ffts": 1254431,
+      "control_frames": 21559,
+      "control_ffts": 260364,
+      "replay_runs": 300,
+      "max_replayed_metric_difference": 0.0,
+      "max_replayed_on_off_difference_db": 0.0,
+      "all_reports_match": true,
+      "all_shapes_ok": true,
+      "all_gain_metadata_ok": true,
+      "all_frame_accounting_ok": true,
+      "selection_precedes_band": true,
+      "final_state_passed": true
+    },
+    "limitations": [
+      "All dBm values are nominal generator level minus the nominal 10 dB pad; no independent power meter was available.",
+      "The band error measurements use only -50, -30 and -10 dBm.",
+      "This is integrated CW dBFS, not an absolute traceable power calibration, noise figure or Wi-Fi BER result.",
+      "Working-band points at 2410/-50 and 2460/-50 fail the SNR gate and are retained as failures."
+    ]
+  },
+  "phase2": {
+    "generated_utc": "2026-10-28T15:53:03.133334+00:00",
+    "device": {
+      "INFO": "S3SDR 6 burst 16380",
+      "VERSION?": "VERSION {\"revision\":\"9b61e7465bee6da15209c5c09308043d08c46a1d\",\"build_date\":\"2026-10-26\",\"build_timestamp\":\"2026-10-26T21:26:29Z\",\"profile\":\"esp32s3\"}",
+      "LIMITS?": "LIMITS {\"gain\":[0,82,1],\"bandwidth\":[13,69,1,0],\"rates\":[80000000,40000000,16000000],\"bits\":[8,10]}",
+      "SPECINFO?": "SPECINFO {\"continuous\":true,\"transports\":[\"USB\"],\"profiles\":[[16000000,6,256,2,1],[16000000,6,512,2,2],[16000000,6,1024,2,4],[16000000,6,2048,3,7],[40000000,1,256,5,3],[40000000,1,512,5,5],[40000000,1,1024,5,9],[40000000,1,2048,7,17],[80000000,0,256,10,6],[80000000,0,512,12,10],[80000000,0,1024,14,16],[80000000,0,2048,14,30]]}",
+      "GAIN?": "GAIN HARDWARE -1 0 82 0",
+      "LPF?": "LPF -1 33 33",
+      "DC?": "DC 1"
+    },
+    "serial": "A0:F2:62:F3:A1:8C",
+    "profile": [
+      80000000,
+      0,
+      2048,
+      14,
+      30
+    ],
+    "phase2_selection": {
+      "created_utc": "2026-10-28T15:31:04.901670+00:00",
+      "attenuator_db": 50,
+      "lo_offset_mhz": -2,
+      "gain_step": "5 from the beginning; fine tuning restricted to 78-82 after the coarse scan",
+      "gates": [
+        "five_block_snr_db>=15",
+        "abs_frequency_error_khz<=150",
+        "on_off_excess_db>=10",
+        "gain_metadata_low7_match",
+        "no_generator_errors"
+      ],
+      "selection_rule": "weakest nominal input passing the detection gates; tie-break lowest five-block power standard deviation at that input",
+      "coarse_step5_summary": [
+        {
+          "gain_index": 0,
+          "weakest_passing_input_dbm": null,
+          "block_std_db_at_weakest": null,
+          "block_peak_to_peak_db_at_weakest": null,
+          "snr_db_at_weakest": null,
+          "on_off_db_at_weakest": null
+        },
+        {
+          "gain_index": 5,
+          "weakest_passing_input_dbm": null,
+          "block_std_db_at_weakest": null,
+          "block_peak_to_peak_db_at_weakest": null,
+          "snr_db_at_weakest": null,
+          "on_off_db_at_weakest": null
+        },
+        {
+          "gain_index": 10,
+          "weakest_passing_input_dbm": -50.0,
+          "block_std_db_at_weakest": 0.4095805976020313,
+          "block_peak_to_peak_db_at_weakest": 1.035738510691992,
+          "snr_db_at_weakest": 15.642173392125018,
+          "on_off_db_at_weakest": 15.149428551080284
+        },
+        {
+          "gain_index": 15,
+          "weakest_passing_input_dbm": -50.0,
+          "block_std_db_at_weakest": 0.16097939938543135,
+          "block_peak_to_peak_db_at_weakest": 0.37380379125366403,
+          "snr_db_at_weakest": 17.308340497544044,
+          "on_off_db_at_weakest": 16.29932287932433
+        },
+        {
+          "gain_index": 20,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.16332502767564755,
+          "block_peak_to_peak_db_at_weakest": 0.3861254863493926,
+          "snr_db_at_weakest": 17.828140769609902,
+          "on_off_db_at_weakest": 12.510597258310952
+        },
+        {
+          "gain_index": 25,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.21765641652896786,
+          "block_peak_to_peak_db_at_weakest": 0.4585463240681946,
+          "snr_db_at_weakest": 18.644760817683395,
+          "on_off_db_at_weakest": 14.765591345010396
+        },
+        {
+          "gain_index": 30,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.22585506228698912,
+          "block_peak_to_peak_db_at_weakest": 0.5449566951580636,
+          "snr_db_at_weakest": 15.67403986628837,
+          "on_off_db_at_weakest": 19.888852817085887
+        },
+        {
+          "gain_index": 35,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.45275561039535095,
+          "block_peak_to_peak_db_at_weakest": 0.9694664689659405,
+          "snr_db_at_weakest": 16.999952159813635,
+          "on_off_db_at_weakest": 12.624250848164687
+        },
+        {
+          "gain_index": 40,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.18417484850488475,
+          "block_peak_to_peak_db_at_weakest": 0.3765207825891075,
+          "snr_db_at_weakest": 18.485446304607944,
+          "on_off_db_at_weakest": 14.41712634228596
+        },
+        {
+          "gain_index": 45,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.7608805885151123,
+          "block_peak_to_peak_db_at_weakest": 1.9010104395475693,
+          "snr_db_at_weakest": 19.784462729029904,
+          "on_off_db_at_weakest": 14.764000009814119
+        },
+        {
+          "gain_index": 50,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.11039444750456434,
+          "block_peak_to_peak_db_at_weakest": 0.2802245251374025,
+          "snr_db_at_weakest": 18.43878762867394,
+          "on_off_db_at_weakest": 17.972462679462915
+        },
+        {
+          "gain_index": 55,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.35093465223398307,
+          "block_peak_to_peak_db_at_weakest": 0.8995239489010771,
+          "snr_db_at_weakest": 21.13908422434291,
+          "on_off_db_at_weakest": 12.72798270293659
+        },
+        {
+          "gain_index": 60,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.14437205905092668,
+          "block_peak_to_peak_db_at_weakest": 0.3417543197248918,
+          "snr_db_at_weakest": 20.23254349244499,
+          "on_off_db_at_weakest": 18.27258750083261
+        },
+        {
+          "gain_index": 65,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.9447767946639415,
+          "block_peak_to_peak_db_at_weakest": 2.25327316200012,
+          "snr_db_at_weakest": 18.138296219159322,
+          "on_off_db_at_weakest": 15.391775893503755
+        },
+        {
+          "gain_index": 70,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.6033629154249718,
+          "block_peak_to_peak_db_at_weakest": 1.3185901770001465,
+          "snr_db_at_weakest": 19.01892173478709,
+          "on_off_db_at_weakest": 17.765627771297137
+        },
+        {
+          "gain_index": 75,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 1.3597889689117462,
+          "block_peak_to_peak_db_at_weakest": 3.2947533377124323,
+          "snr_db_at_weakest": 18.287845907509173,
+          "on_off_db_at_weakest": 17.01470689659674
+        },
+        {
+          "gain_index": 80,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 1.4066814755746933,
+          "block_peak_to_peak_db_at_weakest": 3.172132900246302,
+          "snr_db_at_weakest": 17.059649109342,
+          "on_off_db_at_weakest": 13.386316527835348
+        }
+      ],
+      "fine_78_82_summary": [
+        {
+          "gain_index": 78,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 1.1510515451771013,
+          "block_peak_to_peak_db_at_weakest": 3.064363857794408,
+          "snr_db_at_weakest": 15.896805617311912,
+          "on_off_db_at_weakest": 15.963846030585692
+        },
+        {
+          "gain_index": 79,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.1671088241425015,
+          "block_peak_to_peak_db_at_weakest": 0.37977781074182815,
+          "snr_db_at_weakest": 16.968197804494483,
+          "on_off_db_at_weakest": 17.257663015208717
+        },
+        {
+          "gain_index": 80,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.18886702403312372,
+          "block_peak_to_peak_db_at_weakest": 0.4704847838116315,
+          "snr_db_at_weakest": 16.928485709687827,
+          "on_off_db_at_weakest": 16.876397303912523
+        },
+        {
+          "gain_index": 81,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.30226643902195843,
+          "block_peak_to_peak_db_at_weakest": 0.7348062584341122,
+          "snr_db_at_weakest": 18.440239896124762,
+          "on_off_db_at_weakest": 14.061842100156973
+        },
+        {
+          "gain_index": 82,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.5987179899884904,
+          "block_peak_to_peak_db_at_weakest": 1.6257125998983941,
+          "snr_db_at_weakest": 17.401820462806825,
+          "on_off_db_at_weakest": 16.026694075574117
+        }
+      ],
+      "selected_gain_index": 79,
+      "selected_weakest_passing_input_dbm": -70.0,
+      "selected_block_std_db": 0.1671088241425015,
+      "selected_block_peak_to_peak_db": 0.37977781074182815,
+      "selected_snr_db": 16.968197804494483,
+      "selected_on_off_db": 17.257663015208717,
+      "note": "Gain 79 reaches the weakest tested input (-70 dBm) with the lowest block std among gains 78-82; no gain reached -75 dBm."
+    },
+    "gain_search_50db": {
+      "captures": 165,
+      "coarse_step5_summary": [
+        {
+          "gain_index": 0,
+          "weakest_passing_input_dbm": null,
+          "block_std_db_at_weakest": null,
+          "block_peak_to_peak_db_at_weakest": null,
+          "snr_db_at_weakest": null,
+          "on_off_db_at_weakest": null
+        },
+        {
+          "gain_index": 5,
+          "weakest_passing_input_dbm": null,
+          "block_std_db_at_weakest": null,
+          "block_peak_to_peak_db_at_weakest": null,
+          "snr_db_at_weakest": null,
+          "on_off_db_at_weakest": null
+        },
+        {
+          "gain_index": 10,
+          "weakest_passing_input_dbm": -50.0,
+          "block_std_db_at_weakest": 0.4095805976020313,
+          "block_peak_to_peak_db_at_weakest": 1.035738510691992,
+          "snr_db_at_weakest": 15.642173392125018,
+          "on_off_db_at_weakest": 15.149428551080284
+        },
+        {
+          "gain_index": 15,
+          "weakest_passing_input_dbm": -50.0,
+          "block_std_db_at_weakest": 0.16097939938543135,
+          "block_peak_to_peak_db_at_weakest": 0.37380379125366403,
+          "snr_db_at_weakest": 17.308340497544044,
+          "on_off_db_at_weakest": 16.29932287932433
+        },
+        {
+          "gain_index": 20,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.16332502767564755,
+          "block_peak_to_peak_db_at_weakest": 0.3861254863493926,
+          "snr_db_at_weakest": 17.828140769609902,
+          "on_off_db_at_weakest": 12.510597258310952
+        },
+        {
+          "gain_index": 25,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.21765641652896786,
+          "block_peak_to_peak_db_at_weakest": 0.4585463240681946,
+          "snr_db_at_weakest": 18.644760817683395,
+          "on_off_db_at_weakest": 14.765591345010396
+        },
+        {
+          "gain_index": 30,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.22585506228698912,
+          "block_peak_to_peak_db_at_weakest": 0.5449566951580636,
+          "snr_db_at_weakest": 15.67403986628837,
+          "on_off_db_at_weakest": 19.888852817085887
+        },
+        {
+          "gain_index": 35,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.45275561039535095,
+          "block_peak_to_peak_db_at_weakest": 0.9694664689659405,
+          "snr_db_at_weakest": 16.999952159813635,
+          "on_off_db_at_weakest": 12.624250848164687
+        },
+        {
+          "gain_index": 40,
+          "weakest_passing_input_dbm": -55.0,
+          "block_std_db_at_weakest": 0.18417484850488475,
+          "block_peak_to_peak_db_at_weakest": 0.3765207825891075,
+          "snr_db_at_weakest": 18.485446304607944,
+          "on_off_db_at_weakest": 14.41712634228596
+        },
+        {
+          "gain_index": 45,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.7608805885151123,
+          "block_peak_to_peak_db_at_weakest": 1.9010104395475693,
+          "snr_db_at_weakest": 19.784462729029904,
+          "on_off_db_at_weakest": 14.764000009814119
+        },
+        {
+          "gain_index": 50,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.11039444750456434,
+          "block_peak_to_peak_db_at_weakest": 0.2802245251374025,
+          "snr_db_at_weakest": 18.43878762867394,
+          "on_off_db_at_weakest": 17.972462679462915
+        },
+        {
+          "gain_index": 55,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.35093465223398307,
+          "block_peak_to_peak_db_at_weakest": 0.8995239489010771,
+          "snr_db_at_weakest": 21.13908422434291,
+          "on_off_db_at_weakest": 12.72798270293659
+        },
+        {
+          "gain_index": 60,
+          "weakest_passing_input_dbm": -60.0,
+          "block_std_db_at_weakest": 0.14437205905092668,
+          "block_peak_to_peak_db_at_weakest": 0.3417543197248918,
+          "snr_db_at_weakest": 20.23254349244499,
+          "on_off_db_at_weakest": 18.27258750083261
+        },
+        {
+          "gain_index": 65,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.9447767946639415,
+          "block_peak_to_peak_db_at_weakest": 2.25327316200012,
+          "snr_db_at_weakest": 18.138296219159322,
+          "on_off_db_at_weakest": 15.391775893503755
+        },
+        {
+          "gain_index": 70,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 0.6033629154249718,
+          "block_peak_to_peak_db_at_weakest": 1.3185901770001465,
+          "snr_db_at_weakest": 19.01892173478709,
+          "on_off_db_at_weakest": 17.765627771297137
+        },
+        {
+          "gain_index": 75,
+          "weakest_passing_input_dbm": -65.0,
+          "block_std_db_at_weakest": 1.3597889689117462,
+          "block_peak_to_peak_db_at_weakest": 3.2947533377124323,
+          "snr_db_at_weakest": 18.287845907509173,
+          "on_off_db_at_weakest": 17.01470689659674
+        },
+        {
+          "gain_index": 80,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 1.4066814755746933,
+          "block_peak_to_peak_db_at_weakest": 3.172132900246302,
+          "snr_db_at_weakest": 17.059649109342,
+          "on_off_db_at_weakest": 13.386316527835348
+        }
+      ],
+      "fine_78_82_summary": [
+        {
+          "gain_index": 78,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 1.1510515451771013,
+          "block_peak_to_peak_db_at_weakest": 3.064363857794408,
+          "snr_db_at_weakest": 15.896805617311912,
+          "on_off_db_at_weakest": 15.963846030585692
+        },
+        {
+          "gain_index": 79,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.1671088241425015,
+          "block_peak_to_peak_db_at_weakest": 0.37977781074182815,
+          "snr_db_at_weakest": 16.968197804494483,
+          "on_off_db_at_weakest": 17.257663015208717
+        },
+        {
+          "gain_index": 80,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.18886702403312372,
+          "block_peak_to_peak_db_at_weakest": 0.4704847838116315,
+          "snr_db_at_weakest": 16.928485709687827,
+          "on_off_db_at_weakest": 16.876397303912523
+        },
+        {
+          "gain_index": 81,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.30226643902195843,
+          "block_peak_to_peak_db_at_weakest": 0.7348062584341122,
+          "snr_db_at_weakest": 18.440239896124762,
+          "on_off_db_at_weakest": 14.061842100156973
+        },
+        {
+          "gain_index": 82,
+          "weakest_passing_input_dbm": -70.0,
+          "block_std_db_at_weakest": 0.5987179899884904,
+          "block_peak_to_peak_db_at_weakest": 1.6257125998983941,
+          "snr_db_at_weakest": 17.401820462806825,
+          "on_off_db_at_weakest": 16.026694075574117
+        }
+      ]
+    },
+    "sensitivity": {
+      "gain_index": 79,
+      "captures": 307,
+      "frames": 147209,
+      "ffts": 1776075,
+      "bands": {
+        "2000_2950_50mhz": {
+          "frequencies_mhz": [
+            2000,
+            2050,
+            2100,
+            2150,
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600,
+            2650,
+            2700,
+            2750,
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "confirmed_count": 16,
+          "no_threshold_frequencies_mhz": [
+            2800,
+            2850,
+            2900,
+            2950
+          ],
+          "thresholds_dbm": {
+            "2000": -70.0,
+            "2050": -74.0,
+            "2100": -70.0,
+            "2150": -65.0,
+            "2200": -77.0,
+            "2250": -78.0,
+            "2300": -72.0,
+            "2350": -79.0,
+            "2400": -76.0,
+            "2450": -67.0,
+            "2500": -73.0,
+            "2550": -79.0,
+            "2600": -62.0,
+            "2650": -64.0,
+            "2700": -69.0,
+            "2750": -76.0
+          },
+          "best_confirmed_dbm": -79.0,
+          "worst_confirmed_dbm": -62.0,
+          "median_confirmed_dbm": -72.5,
+          "weaker_failed_dbm": {
+            "2000": -71.0,
+            "2050": -75.0,
+            "2100": -71.0,
+            "2150": -66.0,
+            "2200": -78.0,
+            "2250": -79.0,
+            "2300": -73.0,
+            "2350": -80.0,
+            "2400": -77.0,
+            "2450": -68.0,
+            "2500": -74.0,
+            "2550": -80.0,
+            "2600": -63.0,
+            "2650": -65.0,
+            "2700": -70.0,
+            "2750": -77.0,
+            "2800": null,
+            "2850": null,
+            "2900": null,
+            "2950": null
+          }
+        },
+        "2200_2600_50mhz": {
+          "frequencies_mhz": [
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500,
+            2550,
+            2600
+          ],
+          "confirmed_count": 9,
+          "no_threshold_frequencies_mhz": [],
+          "thresholds_dbm": {
+            "2200": -77.0,
+            "2250": -78.0,
+            "2300": -72.0,
+            "2350": -79.0,
+            "2400": -76.0,
+            "2450": -67.0,
+            "2500": -73.0,
+            "2550": -79.0,
+            "2600": -62.0
+          },
+          "best_confirmed_dbm": -79.0,
+          "worst_confirmed_dbm": -62.0,
+          "median_confirmed_dbm": -76.0,
+          "weaker_failed_dbm": {
+            "2200": -78.0,
+            "2250": -79.0,
+            "2300": -73.0,
+            "2350": -80.0,
+            "2400": -77.0,
+            "2450": -68.0,
+            "2500": -74.0,
+            "2550": -80.0,
+            "2600": -63.0
+          }
+        },
+        "2400_2500_10mhz": {
+          "frequencies_mhz": [
+            2400,
+            2410,
+            2420,
+            2430,
+            2440,
+            2450,
+            2460,
+            2470,
+            2480,
+            2490,
+            2500
+          ],
+          "confirmed_count": 11,
+          "no_threshold_frequencies_mhz": [],
+          "thresholds_dbm": {
+            "2400": -76.0,
+            "2410": -66.0,
+            "2420": -73.0,
+            "2430": -67.0,
+            "2440": -66.0,
+            "2450": -67.0,
+            "2460": -60.0,
+            "2470": -67.0,
+            "2480": -65.0,
+            "2490": -71.0,
+            "2500": -73.0
+          },
+          "best_confirmed_dbm": -76.0,
+          "worst_confirmed_dbm": -60.0,
+          "median_confirmed_dbm": -67.0,
+          "weaker_failed_dbm": {
+            "2400": -77.0,
+            "2410": -67.0,
+            "2420": -74.0,
+            "2430": -68.0,
+            "2440": -67.0,
+            "2450": -68.0,
+            "2460": -61.0,
+            "2470": -68.0,
+            "2480": -66.0,
+            "2490": -72.0,
+            "2500": -74.0
+          }
+        }
+      },
+      "note": "Thresholds are nominal DUT input. A -70 dBm threshold is the weakest detected level here; no -90 dBm threshold was found at gain 79 because source-off background set the on/off gate."
+    },
+    "usable_range_10db_pad": {
+      "-50": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [
+          2410,
+          2460
+        ],
+        "working_max_abs_error_db": 1.021863683344506,
+        "working_within_2db_mhz": [
+          2400,
+          2420,
+          2430,
+          2440,
+          2450,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 7.719915364669092,
+        "extended_within_2db_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2200,
+            2600
+          ]
+        ]
+      },
+      "-30": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [],
+        "working_max_abs_error_db": 0.5523503512343453,
+        "working_within_2db_mhz": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 6.38934621422672,
+        "extended_within_2db_frequencies_mhz": [
+          2150,
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2150,
+            2650
+          ]
+        ]
+      },
+      "-10": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [],
+        "working_max_abs_error_db": 0.3602234708249945,
+        "working_within_2db_mhz": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 6.783700562808711,
+        "extended_within_2db_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650,
+          2700
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2200,
+            2700
+          ]
+        ]
+      }
+    },
+    "working_band_10db_pad": {
+      "-50": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [
+          2410,
+          2460
+        ],
+        "working_max_abs_error_db": 1.021863683344506,
+        "working_within_2db_mhz": [
+          2400,
+          2420,
+          2430,
+          2440,
+          2450,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 7.719915364669092,
+        "extended_within_2db_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2200,
+            2600
+          ]
+        ]
+      },
+      "-30": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [],
+        "working_max_abs_error_db": 0.5523503512343453,
+        "working_within_2db_mhz": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 6.38934621422672,
+        "extended_within_2db_frequencies_mhz": [
+          2150,
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2150,
+            2650
+          ]
+        ]
+      },
+      "-10": {
+        "working_captures": 11,
+        "working_gate_failures_mhz": [],
+        "working_max_abs_error_db": 0.3602234708249945,
+        "working_within_2db_mhz": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "extended_gate_failures_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "extended_max_abs_error_db": 6.783700562808711,
+        "extended_within_2db_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650,
+          2700
+        ],
+        "extended_within_2db_intervals_mhz": [
+          [
+            2200,
+            2700
+          ]
+        ]
+      }
+    },
+    "pad_overlap": {
+      "points": [
+        {
+          "gain_index": 0,
+          "reading_10db_dbfs": -67.63582024390186,
+          "reading_50db_dbfs": -66.36095065127927,
+          "difference_50_minus_10_db": 1.2748695926225935,
+          "p10_reliable": false,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 5,
+          "reading_10db_dbfs": -61.72669412532106,
+          "reading_50db_dbfs": -59.27404035390556,
+          "difference_50_minus_10_db": 2.4526537714154983,
+          "p10_reliable": false,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 10,
+          "reading_10db_dbfs": -56.68375350383641,
+          "reading_50db_dbfs": -54.70462967438017,
+          "difference_50_minus_10_db": 1.9791238294562348,
+          "p10_reliable": false,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 15,
+          "reading_10db_dbfs": -51.71463159975125,
+          "reading_50db_dbfs": -48.620281191571664,
+          "difference_50_minus_10_db": 3.0943504081795865,
+          "p10_reliable": false,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 20,
+          "reading_10db_dbfs": -46.545943988102366,
+          "reading_50db_dbfs": -43.97857066056193,
+          "difference_50_minus_10_db": 2.5673733275404373,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 25,
+          "reading_10db_dbfs": -40.89283968175499,
+          "reading_50db_dbfs": -38.63017899542144,
+          "difference_50_minus_10_db": 2.262660686333554,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 30,
+          "reading_10db_dbfs": -34.09628905996111,
+          "reading_50db_dbfs": -32.66980034545052,
+          "difference_50_minus_10_db": 1.4264887145105902,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 35,
+          "reading_10db_dbfs": -29.626347497807256,
+          "reading_50db_dbfs": -28.30016601496225,
+          "difference_50_minus_10_db": 1.326181482845005,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 40,
+          "reading_10db_dbfs": -24.896374571049854,
+          "reading_50db_dbfs": -23.15362324240065,
+          "difference_50_minus_10_db": 1.7427513286492058,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 45,
+          "reading_10db_dbfs": -19.80014491313288,
+          "reading_50db_dbfs": -18.38755440947231,
+          "difference_50_minus_10_db": 1.4125905036605708,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 50,
+          "reading_10db_dbfs": -22.337637587936033,
+          "reading_50db_dbfs": -19.739679466101375,
+          "difference_50_minus_10_db": 2.597958121834658,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": true
+        },
+        {
+          "gain_index": 55,
+          "reading_10db_dbfs": -17.252992436217262,
+          "reading_50db_dbfs": -15.150690399518957,
+          "difference_50_minus_10_db": 2.1023020366983047,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 60,
+          "reading_10db_dbfs": -12.577523100141121,
+          "reading_50db_dbfs": -10.259011674929575,
+          "difference_50_minus_10_db": 2.318511425211547,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 65,
+          "reading_10db_dbfs": -7.889347308171999,
+          "reading_50db_dbfs": -6.240852897891557,
+          "difference_50_minus_10_db": 1.648494410280442,
+          "p10_reliable": true,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 70,
+          "reading_10db_dbfs": -3.6762419223566094,
+          "reading_50db_dbfs": -1.6107401331296622,
+          "difference_50_minus_10_db": 2.065501789226947,
+          "p10_reliable": false,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 75,
+          "reading_10db_dbfs": -0.3444734579688936,
+          "reading_50db_dbfs": -0.02586399487453748,
+          "difference_50_minus_10_db": 0.3186094630943561,
+          "p10_reliable": false,
+          "p50_reliable": false,
+          "unsaturated_for_overlap": false
+        },
+        {
+          "gain_index": 80,
+          "reading_10db_dbfs": 0.2891808401414606,
+          "reading_50db_dbfs": 0.7074652903688656,
+          "difference_50_minus_10_db": 0.418284450227405,
+          "p10_reliable": true,
+          "p50_reliable": true,
+          "unsaturated_for_overlap": false
+        }
+      ],
+      "valid_gains": [
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ],
+      "max_abs_difference_db": 2.597958121834658,
+      "mean_difference_db": 1.9051434521962887,
+      "note": "No correction was fitted. The 50 dB readings are systematically higher than the 10 dB readings at -50 dBm, indicating a nominal-pad or setup difference of roughly 1-3 dB."
+    },
+    "raw_adc": {
+      "captures": 48,
+      "by_frequency": {
+        "2000": {
+          "off_rms_dbfs": -25.00900120977036,
+          "on_rms_dbfs": -24.00982881985008,
+          "max_exact_rail_fraction": 0.0,
+          "max_near_rail_fraction": 0.0
+        },
+        "2050": {
+          "off_rms_dbfs": -24.128545387138796,
+          "on_rms_dbfs": -23.767019944538163,
+          "max_exact_rail_fraction": 0.0,
+          "max_near_rail_fraction": 0.0
+        },
+        "2100": {
+          "off_rms_dbfs": -19.557809931098465,
+          "on_rms_dbfs": -13.516586802068788,
+          "max_exact_rail_fraction": 0.0,
+          "max_near_rail_fraction": 0.0
+        },
+        "2150": {
+          "off_rms_dbfs": -17.116546045287922,
+          "on_rms_dbfs": -13.460471179131153,
+          "max_exact_rail_fraction": 0.0,
+          "max_near_rail_fraction": 0.0
+        },
+        "2410": {
+          "off_rms_dbfs": -10.966653926157365,
+          "on_rms_dbfs": -8.631181072811117,
+          "max_exact_rail_fraction": 0.005525030525030525,
+          "max_near_rail_fraction": 0.00695970695970696
+        },
+        "2460": {
+          "off_rms_dbfs": -11.177821492579683,
+          "on_rms_dbfs": -6.024030794340828,
+          "max_exact_rail_fraction": 0.006593406593406593,
+          "max_near_rail_fraction": 0.00753968253968254
+        },
+        "2600": {
+          "off_rms_dbfs": -17.455248600015015,
+          "on_rms_dbfs": -9.443141548578389,
+          "max_exact_rail_fraction": 3.0525030525030525e-05,
+          "max_near_rail_fraction": 3.0525030525030525e-05
+        },
+        "2800": {
+          "off_rms_dbfs": -24.617471378379182,
+          "on_rms_dbfs": -2.7019280745297896,
+          "max_exact_rail_fraction": 9.157509157509158e-05,
+          "max_near_rail_fraction": 0.0001221001221001221
+        }
+      },
+      "note": "High-gain source-off background is strong at 2100, 2150, 2410, 2460 and 2600 MHz. Near-rail hits occur at 2410 and 2460 MHz. At 2800 MHz the source-on raw RMS is very high even though no reliable spectral tone is found."
+    },
+    "fft_profiles": {
+      "captures": 12,
+      "profiles": [
+        {
+          "sample_rate_hz": 16000000,
+          "bins": 256,
+          "spacing_hz": 62500.0,
+          "hann_enbw_hz": 93750.0
+        },
+        {
+          "sample_rate_hz": 16000000,
+          "bins": 512,
+          "spacing_hz": 31250.0,
+          "hann_enbw_hz": 46875.0
+        },
+        {
+          "sample_rate_hz": 16000000,
+          "bins": 1024,
+          "spacing_hz": 15625.0,
+          "hann_enbw_hz": 23437.5
+        },
+        {
+          "sample_rate_hz": 16000000,
+          "bins": 2048,
+          "spacing_hz": 7812.5,
+          "hann_enbw_hz": 11718.75
+        },
+        {
+          "sample_rate_hz": 40000000,
+          "bins": 256,
+          "spacing_hz": 156250.0,
+          "hann_enbw_hz": 234375.0
+        },
+        {
+          "sample_rate_hz": 40000000,
+          "bins": 512,
+          "spacing_hz": 78125.0,
+          "hann_enbw_hz": 117187.5
+        },
+        {
+          "sample_rate_hz": 40000000,
+          "bins": 1024,
+          "spacing_hz": 39062.5,
+          "hann_enbw_hz": 58593.75
+        },
+        {
+          "sample_rate_hz": 40000000,
+          "bins": 2048,
+          "spacing_hz": 19531.25,
+          "hann_enbw_hz": 29296.875
+        },
+        {
+          "sample_rate_hz": 80000000,
+          "bins": 256,
+          "spacing_hz": 312500.0,
+          "hann_enbw_hz": 468750.0
+        },
+        {
+          "sample_rate_hz": 80000000,
+          "bins": 512,
+          "spacing_hz": 156250.0,
+          "hann_enbw_hz": 234375.0
+        },
+        {
+          "sample_rate_hz": 80000000,
+          "bins": 1024,
+          "spacing_hz": 78125.0,
+          "hann_enbw_hz": 117187.5
+        },
+        {
+          "sample_rate_hz": 80000000,
+          "bins": 2048,
+          "spacing_hz": 39062.5,
+          "hann_enbw_hz": 58593.75
+        }
+      ],
+      "reference_profile": {
+        "sample_rate_hz": 80000000,
+        "bins": 2048,
+        "tone_dbfs": -15.507732299831531
+      },
+      "max_abs_dbfs_deviation_db": 0.4780197173675038,
+      "max_abs_frequency_error_khz": 187.5,
+      "max_abs_frequency_error_bins": 8.0,
+      "min_mirror_rejection_db": 12.821334685991664,
+      "all_peaks_in_expected_bin": true,
+      "frames": 5740,
+      "ffts": 189366,
+      "note": "The first 80 MHz / 2048 profile attempt read -3.34 dBFS while all other profiles and a repeat read about -15.5 dBFS; the first capture was discarded as an outlier and the repeat is used."
+    },
+    "integrity": {
+      "phase2_capture_counts": {
+        "gain_coarse": 153,
+        "gain_fine": 15,
+        "sensitivity": 307,
+        "fft_profiles": 12
+      },
+      "spectrum_frames": 213416,
+      "spectrum_ffts": 2694890,
+      "replay_runs": 509,
+      "max_replayed_metric_difference": 0.0,
+      "max_replayed_on_off_difference_db": 0.0,
+      "all_reports_match": true,
+      "all_shapes_ok": true,
+      "all_gain_metadata_ok": true,
+      "all_frame_accounting_ok": true,
+      "adc_replay_runs": 48,
+      "adc_all_iq_match": true,
+      "selection_precedes_sensitivity": true,
+      "final_state_passed": true
+    },
+    "limitations": [
+      "All dBm values are nominal generator level minus the nominal 50 dB pad; no independent power meter was available.",
+      "Sensitivity is known-frequency CW detectability in this setup, not Wi-Fi BER, noise figure or a thermal-noise limit.",
+      "Source-off background and near-rail ADC hits limit several frequencies; thresholds are setup-limited.",
+      "No gain reached -90 dBm with the on/off gate; the best threshold observed was -79 dBm.",
+      "The 10 dB-pad usable-range rows reuse phase-1 data; -15 dBm was not measured because the phase-1 band scan used the requested three levels -50/-30/-10 dBm."
+    ]
+  }
+}

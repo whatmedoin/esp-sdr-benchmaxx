@@ -1,0 +1,604 @@
+{
+  "phase1": {
+    "created_utc": "2026-10-28T15:12:43.345102+00:00",
+    "board": "ESP32-S3 A0:F2:62:F3:A1:8C",
+    "attenuator_db": 10,
+    "lo_offset_mhz": -2,
+    "criterion": {
+      "all_gates": [
+        "five_block_snr_db>=15",
+        "abs_frequency_error_khz<=150",
+        "on_off_excess_db>=10",
+        "gain_metadata_low7_match",
+        "no_generator_errors",
+        "block_peak_to_peak_db<=0.5"
+      ],
+      "power_accuracy_db": 2.0,
+      "minimum_headroom_db": 2.0,
+      "anchor": "gain 20, 2450 MHz, nominal -30 dBm, one offset"
+    },
+    "gain_step": "5",
+    "selected_gain_index": 20,
+    "selected_offset_db": -4.1754406933125985,
+    "selected_power_estimate_rule": "nominal DUT input (dBm) = integrated dBFS + selected_offset_db",
+    "selected_generator_rule": "generator output (dBm) = nominal DUT input + 10",
+    "selection_rationale": "Gain 20 was the only gain meeting the full -50..-10 dBm range with all gates and at least 2 dB headroom. Gain 25 also covered the full range but had only 0.37 dB headroom at -10 dBm.",
+    "gain_comparison": [
+      {
+        "gain_index": 0,
+        "anchor_usable": false,
+        "one_point_offset_db": null,
+        "longest_contiguous_range_dbm": [],
+        "range_points": 0,
+        "headroom_db": null,
+        "min_snr_in_range_db": null,
+        "passing_inputs_dbm": []
+      },
+      {
+        "gain_index": 5,
+        "anchor_usable": true,
+        "one_point_offset_db": 9.983529402676908,
+        "longest_contiguous_range_dbm": [
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "range_points": 6,
+        "headroom_db": 19.848115587126514,
+        "min_snr_in_range_db": 23.70875934481585,
+        "passing_inputs_dbm": [
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ]
+      },
+      {
+        "gain_index": 10,
+        "anchor_usable": true,
+        "one_point_offset_db": 5.402336298520844,
+        "longest_contiguous_range_dbm": [
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "range_points": 7,
+        "headroom_db": 15.741365608829874,
+        "min_snr_in_range_db": 24.197277284182164,
+        "passing_inputs_dbm": [
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ]
+      },
+      {
+        "gain_index": 15,
+        "anchor_usable": true,
+        "one_point_offset_db": 0.8250208049237244,
+        "longest_contiguous_range_dbm": [
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "range_points": 8,
+        "headroom_db": 10.820784897455137,
+        "min_snr_in_range_db": 20.351853134037874,
+        "passing_inputs_dbm": [
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ]
+      },
+      {
+        "gain_index": 20,
+        "anchor_usable": true,
+        "one_point_offset_db": -4.1754406933125985,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "range_points": 9,
+        "headroom_db": 5.402965174186601,
+        "min_snr_in_range_db": 20.756258667784792,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ]
+      },
+      {
+        "gain_index": 25,
+        "anchor_usable": true,
+        "one_point_offset_db": -9.170938734944016,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "range_points": 9,
+        "headroom_db": 0.3655001997453894,
+        "min_snr_in_range_db": 20.941023372006697,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ]
+      },
+      {
+        "gain_index": 30,
+        "anchor_usable": true,
+        "one_point_offset_db": -15.984567396080337,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0
+        ],
+        "range_points": 8,
+        "headroom_db": -0.6589866085841317,
+        "min_snr_in_range_db": 22.84540854193221,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0
+        ]
+      },
+      {
+        "gain_index": 35,
+        "anchor_usable": true,
+        "one_point_offset_db": -20.184583520118153,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0
+        ],
+        "range_points": 7,
+        "headroom_db": -0.18166756526842165,
+        "min_snr_in_range_db": 28.4916866278105,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0
+        ]
+      },
+      {
+        "gain_index": 40,
+        "anchor_usable": true,
+        "one_point_offset_db": -25.213939690486207,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0
+        ],
+        "range_points": 6,
+        "headroom_db": -0.17007200189382105,
+        "min_snr_in_range_db": 25.902984952118068,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0
+        ]
+      },
+      {
+        "gain_index": 45,
+        "anchor_usable": true,
+        "one_point_offset_db": -29.998491299209565,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ],
+        "range_points": 5,
+        "headroom_db": 0.0015087007904349833,
+        "min_snr_in_range_db": 26.366394047587235,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 50,
+        "anchor_usable": true,
+        "one_point_offset_db": -28.125909731149818,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ],
+        "range_points": 5,
+        "headroom_db": 1.8740902688501826,
+        "min_snr_in_range_db": 27.55875358493239,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 55,
+        "anchor_usable": true,
+        "one_point_offset_db": -30.857319048044282,
+        "longest_contiguous_range_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ],
+        "range_points": 5,
+        "headroom_db": -0.8573190480442815,
+        "min_snr_in_range_db": 26.856959038861525,
+        "passing_inputs_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 60,
+        "anchor_usable": true,
+        "one_point_offset_db": -31.330220871324585,
+        "longest_contiguous_range_dbm": [
+          -30.0
+        ],
+        "range_points": 1,
+        "headroom_db": -1.330220871324585,
+        "min_snr_in_range_db": 39.925003130607905,
+        "passing_inputs_dbm": [
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 65,
+        "anchor_usable": true,
+        "one_point_offset_db": -31.580533435511995,
+        "longest_contiguous_range_dbm": [
+          -30.0
+        ],
+        "range_points": 1,
+        "headroom_db": -1.580533435511994,
+        "min_snr_in_range_db": 38.93157562223791,
+        "passing_inputs_dbm": [
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 70,
+        "anchor_usable": true,
+        "one_point_offset_db": -31.599652684006458,
+        "longest_contiguous_range_dbm": [
+          -30.0
+        ],
+        "range_points": 1,
+        "headroom_db": -1.599652684006456,
+        "min_snr_in_range_db": 37.86083483964629,
+        "passing_inputs_dbm": [
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 75,
+        "anchor_usable": true,
+        "one_point_offset_db": -31.600013497550037,
+        "longest_contiguous_range_dbm": [
+          -30.0
+        ],
+        "range_points": 1,
+        "headroom_db": -1.6000134975500369,
+        "min_snr_in_range_db": 35.629929959661915,
+        "passing_inputs_dbm": [
+          -30.0
+        ]
+      },
+      {
+        "gain_index": 80,
+        "anchor_usable": true,
+        "one_point_offset_db": -31.598852404431224,
+        "longest_contiguous_range_dbm": [
+          -30.0
+        ],
+        "range_points": 1,
+        "headroom_db": -1.598852404431224,
+        "min_snr_in_range_db": 35.07920993525215,
+        "passing_inputs_dbm": [
+          -30.0
+        ]
+      }
+    ],
+    "band_powers_dbm": [
+      -50.0,
+      -30.0,
+      -10.0
+    ],
+    "band_power_note": "Working and extended band error measurements use only these three nominal input levels."
+  },
+  "phase2": {
+    "created_utc": "2026-10-28T15:31:04.901670+00:00",
+    "attenuator_db": 50,
+    "lo_offset_mhz": -2,
+    "gain_step": "5 from the beginning; fine tuning restricted to 78-82 after the coarse scan",
+    "gates": [
+      "five_block_snr_db>=15",
+      "abs_frequency_error_khz<=150",
+      "on_off_excess_db>=10",
+      "gain_metadata_low7_match",
+      "no_generator_errors"
+    ],
+    "selection_rule": "weakest nominal input passing the detection gates; tie-break lowest five-block power standard deviation at that input",
+    "coarse_step5_summary": [
+      {
+        "gain_index": 0,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 5,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 10,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.4095805976020313,
+        "block_peak_to_peak_db_at_weakest": 1.035738510691992,
+        "snr_db_at_weakest": 15.642173392125018,
+        "on_off_db_at_weakest": 15.149428551080284
+      },
+      {
+        "gain_index": 15,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.16097939938543135,
+        "block_peak_to_peak_db_at_weakest": 0.37380379125366403,
+        "snr_db_at_weakest": 17.308340497544044,
+        "on_off_db_at_weakest": 16.29932287932433
+      },
+      {
+        "gain_index": 20,
+        "weakest_passing_input_dbm": -55.0,
+        "block_std_db_at_weakest": 0.16332502767564755,
+        "block_peak_to_peak_db_at_weakest": 0.3861254863493926,
+        "snr_db_at_weakest": 17.828140769609902,
+        "on_off_db_at_weakest": 12.510597258310952
+      },
+      {
+        "gain_index": 25,
+        "weakest_passing_input_dbm": -55.0,
+        "block_std_db_at_weakest": 0.21765641652896786,
+        "block_peak_to_peak_db_at_weakest": 0.4585463240681946,
+        "snr_db_at_weakest": 18.644760817683395,
+        "on_off_db_at_weakest": 14.765591345010396
+      },
+      {
+        "gain_index": 30,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.22585506228698912,
+        "block_peak_to_peak_db_at_weakest": 0.5449566951580636,
+        "snr_db_at_weakest": 15.67403986628837,
+        "on_off_db_at_weakest": 19.888852817085887
+      },
+      {
+        "gain_index": 35,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.45275561039535095,
+        "block_peak_to_peak_db_at_weakest": 0.9694664689659405,
+        "snr_db_at_weakest": 16.999952159813635,
+        "on_off_db_at_weakest": 12.624250848164687
+      },
+      {
+        "gain_index": 40,
+        "weakest_passing_input_dbm": -55.0,
+        "block_std_db_at_weakest": 0.18417484850488475,
+        "block_peak_to_peak_db_at_weakest": 0.3765207825891075,
+        "snr_db_at_weakest": 18.485446304607944,
+        "on_off_db_at_weakest": 14.41712634228596
+      },
+      {
+        "gain_index": 45,
+        "weakest_passing_input_dbm": -65.0,
+        "block_std_db_at_weakest": 0.7608805885151123,
+        "block_peak_to_peak_db_at_weakest": 1.9010104395475693,
+        "snr_db_at_weakest": 19.784462729029904,
+        "on_off_db_at_weakest": 14.764000009814119
+      },
+      {
+        "gain_index": 50,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.11039444750456434,
+        "block_peak_to_peak_db_at_weakest": 0.2802245251374025,
+        "snr_db_at_weakest": 18.43878762867394,
+        "on_off_db_at_weakest": 17.972462679462915
+      },
+      {
+        "gain_index": 55,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.35093465223398307,
+        "block_peak_to_peak_db_at_weakest": 0.8995239489010771,
+        "snr_db_at_weakest": 21.13908422434291,
+        "on_off_db_at_weakest": 12.72798270293659
+      },
+      {
+        "gain_index": 60,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.14437205905092668,
+        "block_peak_to_peak_db_at_weakest": 0.3417543197248918,
+        "snr_db_at_weakest": 20.23254349244499,
+        "on_off_db_at_weakest": 18.27258750083261
+      },
+      {
+        "gain_index": 65,
+        "weakest_passing_input_dbm": -65.0,
+        "block_std_db_at_weakest": 0.9447767946639415,
+        "block_peak_to_peak_db_at_weakest": 2.25327316200012,
+        "snr_db_at_weakest": 18.138296219159322,
+        "on_off_db_at_weakest": 15.391775893503755
+      },
+      {
+        "gain_index": 70,
+        "weakest_passing_input_dbm": -65.0,
+        "block_std_db_at_weakest": 0.6033629154249718,
+        "block_peak_to_peak_db_at_weakest": 1.3185901770001465,
+        "snr_db_at_weakest": 19.01892173478709,
+        "on_off_db_at_weakest": 17.765627771297137
+      },
+      {
+        "gain_index": 75,
+        "weakest_passing_input_dbm": -65.0,
+        "block_std_db_at_weakest": 1.3597889689117462,
+        "block_peak_to_peak_db_at_weakest": 3.2947533377124323,
+        "snr_db_at_weakest": 18.287845907509173,
+        "on_off_db_at_weakest": 17.01470689659674
+      },
+      {
+        "gain_index": 80,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 1.4066814755746933,
+        "block_peak_to_peak_db_at_weakest": 3.172132900246302,
+        "snr_db_at_weakest": 17.059649109342,
+        "on_off_db_at_weakest": 13.386316527835348
+      }
+    ],
+    "fine_78_82_summary": [
+      {
+        "gain_index": 78,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 1.1510515451771013,
+        "block_peak_to_peak_db_at_weakest": 3.064363857794408,
+        "snr_db_at_weakest": 15.896805617311912,
+        "on_off_db_at_weakest": 15.963846030585692
+      },
+      {
+        "gain_index": 79,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 0.1671088241425015,
+        "block_peak_to_peak_db_at_weakest": 0.37977781074182815,
+        "snr_db_at_weakest": 16.968197804494483,
+        "on_off_db_at_weakest": 17.257663015208717
+      },
+      {
+        "gain_index": 80,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 0.18886702403312372,
+        "block_peak_to_peak_db_at_weakest": 0.4704847838116315,
+        "snr_db_at_weakest": 16.928485709687827,
+        "on_off_db_at_weakest": 16.876397303912523
+      },
+      {
+        "gain_index": 81,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 0.30226643902195843,
+        "block_peak_to_peak_db_at_weakest": 0.7348062584341122,
+        "snr_db_at_weakest": 18.440239896124762,
+        "on_off_db_at_weakest": 14.061842100156973
+      },
+      {
+        "gain_index": 82,
+        "weakest_passing_input_dbm": -70.0,
+        "block_std_db_at_weakest": 0.5987179899884904,
+        "block_peak_to_peak_db_at_weakest": 1.6257125998983941,
+        "snr_db_at_weakest": 17.401820462806825,
+        "on_off_db_at_weakest": 16.026694075574117
+      }
+    ],
+    "selected_gain_index": 79,
+    "selected_weakest_passing_input_dbm": -70.0,
+    "selected_block_std_db": 0.1671088241425015,
+    "selected_block_peak_to_peak_db": 0.37977781074182815,
+    "selected_snr_db": 16.968197804494483,
+    "selected_on_off_db": 17.257663015208717,
+    "note": "Gain 79 reaches the weakest tested input (-70 dBm) with the lowest block std among gains 78-82; no gain reached -75 dBm."
+  },
+  "lo_calibration": {
+    "intercept_hz": 0.0,
+    "slope": 0.0,
+    "slope_ppm": 0.0,
+    "note": "No LO frequency correction applied to the ESP32-S3 #2 data."
+  }
+}
