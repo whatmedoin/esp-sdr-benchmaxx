@@ -1,0 +1,277 @@
+{
+  "phase1": {
+    "created_utc": "2026-10-28T16:06:08.914581+00:00",
+    "board": "ESP32-C6 58:E6:C5:1D:DE:F8",
+    "attenuator_db": 10,
+    "gain_step": "10-index coarse grid; no further fine gain search",
+    "selected_gain_index": 21,
+    "selected_offset_db": -3.6996803245617897,
+    "selected_power_estimate_rule": "nominal DUT input (dBm) = integrated dBFS + selected_offset_db",
+    "selected_generator_rule": "generator output (dBm) = nominal DUT input + 10",
+    "selection_rationale": "Gains 18-22 were already measured with the full 9-level candidate scan. Gain 21 had the best worst-case error (0.495 dB), the lowest block std (0.054 dB), 23.1 dB minimum SNR and 5.8 dB headroom. No further fine gain search was performed.",
+    "candidate_comparison": [
+      {
+        "gain_index": 18,
+        "one_point_offset_db": -1.2577763919831888,
+        "max_abs_error_db": 0.5022532313911228,
+        "headroom_db": 8.253700127457991,
+        "min_snr_db": 16.07193412280395,
+        "max_block_std_db": 0.1792012772623882,
+        "max_block_peak_to_peak_db": 0.4258237696932383,
+        "all_gates": true
+      },
+      {
+        "gain_index": 19,
+        "one_point_offset_db": -2.2557194810275227,
+        "max_abs_error_db": 0.6359593317469745,
+        "headroom_db": 7.243214686083023,
+        "min_snr_db": 16.057225705078288,
+        "max_block_std_db": 0.13686180446003698,
+        "max_block_peak_to_peak_db": 0.3490183441396013,
+        "all_gates": true
+      },
+      {
+        "gain_index": 20,
+        "one_point_offset_db": -3.2716716230725424,
+        "max_abs_error_db": 0.6498206724157498,
+        "headroom_db": 6.24770582270402,
+        "min_snr_db": 16.21895174552532,
+        "max_block_std_db": 0.17589976937157456,
+        "max_block_peak_to_peak_db": 0.4463247806329065,
+        "all_gates": true
+      },
+      {
+        "gain_index": 21,
+        "one_point_offset_db": -3.6996803245617897,
+        "max_abs_error_db": 0.49516067382077367,
+        "headroom_db": 5.805159001617436,
+        "min_snr_db": 23.06322536850162,
+        "max_block_std_db": 0.05372477865941685,
+        "max_block_peak_to_peak_db": 0.13733420260928852,
+        "all_gates": true
+      },
+      {
+        "gain_index": 22,
+        "one_point_offset_db": -4.6727865028219,
+        "max_abs_error_db": 0.5052280284976494,
+        "headroom_db": 4.821985468680451,
+        "min_snr_db": 23.255820413501873,
+        "max_block_std_db": 0.06748390111651399,
+        "max_block_peak_to_peak_db": 0.16714909554733737,
+        "all_gates": true
+      }
+    ],
+    "band_powers_dbm": [
+      -50.0,
+      -30.0,
+      -10.0
+    ],
+    "extended_grid_mhz": [
+      2000,
+      2100,
+      2200,
+      2250,
+      2300,
+      2350,
+      2400,
+      2450,
+      2500,
+      2550,
+      2600,
+      2700,
+      2800,
+      2900,
+      2950
+    ],
+    "working_grid_mhz": [
+      2400,
+      2410,
+      2420,
+      2430,
+      2440,
+      2450,
+      2460,
+      2470,
+      2480,
+      2490,
+      2500
+    ],
+    "grid_note": "Tiered optimized grids: 10 MHz in 2400-2500, 50 MHz in 2200-2600, 100 MHz outside for the extended band."
+  },
+  "phase2": {
+    "created_utc": "2026-10-28T16:22:47.986529+00:00",
+    "attenuator_db": 50,
+    "lo_offset_mhz": -2,
+    "gain_step": "10-index coarse only; no fine gain search",
+    "gates": [
+      "five_block_snr_db>=15",
+      "abs_frequency_error_khz<=150",
+      "on_off_excess_db>=10",
+      "gain_metadata_low7_match",
+      "no_generator_errors",
+      "block_peak_to_peak_db<=0.5 for G_lp selection"
+    ],
+    "selection_rule": "weakest nominal input passing detection plus the 0.5 dB power-stability gate; tie-break lowest five-block standard deviation",
+    "coarse_summary_detection_only": [
+      {
+        "gain_index": 0,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 10,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 20,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.06627174703798996,
+        "block_peak_to_peak_db_at_weakest": 0.15680364409912073,
+        "snr_db_at_weakest": 17.9555059357388,
+        "on_off_db_at_weakest": 16.729251702159925
+      },
+      {
+        "gain_index": 30,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.03895022789304332,
+        "block_peak_to_peak_db_at_weakest": 0.10317918391493208,
+        "snr_db_at_weakest": 20.93112155980679,
+        "on_off_db_at_weakest": 16.209615987999605
+      },
+      {
+        "gain_index": 40,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.06007915464229498,
+        "block_peak_to_peak_db_at_weakest": 0.15619516117627086,
+        "snr_db_at_weakest": 25.13361156265696,
+        "on_off_db_at_weakest": 15.735227118218786
+      },
+      {
+        "gain_index": 50,
+        "weakest_passing_input_dbm": -90.0,
+        "block_std_db_at_weakest": 13.300795763070122,
+        "block_peak_to_peak_db_at_weakest": 31.445964382716078,
+        "snr_db_at_weakest": 21.013488840156413,
+        "on_off_db_at_weakest": 10.567892088965054
+      },
+      {
+        "gain_index": 60,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.3932963191174849,
+        "block_peak_to_peak_db_at_weakest": 1.0614839274142227,
+        "snr_db_at_weakest": 25.308432300844004,
+        "on_off_db_at_weakest": 18.052243415736292
+      },
+      {
+        "gain_index": 70,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.25876174516559797,
+        "block_peak_to_peak_db_at_weakest": 0.7129400905313696,
+        "snr_db_at_weakest": 26.028693563477052,
+        "on_off_db_at_weakest": 20.353573664673725
+      },
+      {
+        "gain_index": 79,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.6233256325829295,
+        "block_peak_to_peak_db_at_weakest": 1.5192238340222277,
+        "snr_db_at_weakest": 27.04591996011494,
+        "on_off_db_at_weakest": 20.166539671725424
+      }
+    ],
+    "coarse_summary_with_stability": [
+      {
+        "gain_index": 0,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 10,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 20,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.06627174703798996,
+        "block_peak_to_peak_db_at_weakest": 0.15680364409912073,
+        "snr_db_at_weakest": 17.9555059357388,
+        "on_off_db_at_weakest": 16.729251702159925
+      },
+      {
+        "gain_index": 30,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.03895022789304332,
+        "block_peak_to_peak_db_at_weakest": 0.10317918391493208,
+        "snr_db_at_weakest": 20.93112155980679,
+        "on_off_db_at_weakest": 16.209615987999605
+      },
+      {
+        "gain_index": 40,
+        "weakest_passing_input_dbm": -60.0,
+        "block_std_db_at_weakest": 0.06007915464229498,
+        "block_peak_to_peak_db_at_weakest": 0.15619516117627086,
+        "snr_db_at_weakest": 25.13361156265696,
+        "on_off_db_at_weakest": 15.735227118218786
+      },
+      {
+        "gain_index": 50,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.04395300203219627,
+        "block_peak_to_peak_db_at_weakest": 0.10009880379626068,
+        "snr_db_at_weakest": 35.6495498405002,
+        "on_off_db_at_weakest": 28.36127161926469
+      },
+      {
+        "gain_index": 60,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.03298502245961672,
+        "block_peak_to_peak_db_at_weakest": 0.0827075561096482,
+        "snr_db_at_weakest": 39.96420070692895,
+        "on_off_db_at_weakest": 27.98998048139488
+      },
+      {
+        "gain_index": 70,
+        "weakest_passing_input_dbm": null,
+        "block_std_db_at_weakest": null,
+        "block_peak_to_peak_db_at_weakest": null,
+        "snr_db_at_weakest": null,
+        "on_off_db_at_weakest": null
+      },
+      {
+        "gain_index": 79,
+        "weakest_passing_input_dbm": -50.0,
+        "block_std_db_at_weakest": 0.17559355982292046,
+        "block_peak_to_peak_db_at_weakest": 0.4563792430082345,
+        "snr_db_at_weakest": 30.730539534411673,
+        "on_off_db_at_weakest": 22.128550177374322
+      }
+    ],
+    "selected_gain_index": 30,
+    "selected_weakest_passing_input_dbm": -60.0,
+    "selected_block_std_db": 0.03895022789304332,
+    "selected_block_peak_to_peak_db": 0.10317918391493208,
+    "selected_snr_db": 20.93112155980679,
+    "selected_on_off_db": 16.209615987999605,
+    "artifact_note": "Gain 50 at -90 dBm passed the detection-only gates but had 31.45 dB block p-p and only 10.6 dB on/off. It is retained as a background artifact, not used as a usable sensitivity point. The 0.5 dB stability gate rejects it."
+  },
+  "lo_calibration": {
+    "intercept_hz": 0.0,
+    "slope": 0.0,
+    "slope_ppm": 0.0,
+    "note": "No LO frequency correction applied to the ESP32-C6 data; measured error was about +109 kHz at 2450 MHz."
+  }
+}

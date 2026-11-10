@@ -1,4 +1,4 @@
-> This fork contains performance improvements to FFT processing on the ESP32-S31 chip. Check out the [report](docs/features/fft_optim/README.md) for benchmarks and changes made. 
+> This fork includes FFT performance improvements for [ESP32-C5](docs/features/c5_fft_optim/README.md), [ESP32-C6](docs/features/c6_fft_optim/README.md), and [ESP32-S31](docs/features/fft_optim/README.md). See the reports for benchmarks and changes.
 
 ---
 

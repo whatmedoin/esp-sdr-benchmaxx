@@ -1,0 +1,923 @@
+{
+  "phase1": {
+    "gain_index": 20,
+    "calibration_offset_db": -6.823642722734633,
+    "working_band_points": 99,
+    "working_band_passes": 99,
+    "working_band_max_abs_error_db": 0.9862815008586736,
+    "working_band_power_stability_ranking": [
+      {
+        "expected_input_dbm": -30.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.4769478914861338,
+        "mean_error_db": -0.12172016201677914,
+        "max_block_peak_to_peak_db": 0.030240328394089744,
+        "max_block_std_db": 0.013113810510254295,
+        "min_snr_db": 36.57437223003847
+      },
+      {
+        "expected_input_dbm": -15.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.9855045667836322,
+        "mean_error_db": 0.3655572159797506,
+        "max_block_peak_to_peak_db": 0.05351222641792219,
+        "max_block_std_db": 0.021066182306430436,
+        "min_snr_db": 50.33750007992539
+      },
+      {
+        "expected_input_dbm": -10.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.5071909295984369,
+        "mean_error_db": 0.4420166904920995,
+        "max_block_peak_to_peak_db": 0.07417019984344009,
+        "max_block_std_db": 0.02819644053886933,
+        "min_snr_db": 51.18411668656134
+      },
+      {
+        "expected_input_dbm": -45.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.30311127756318257,
+        "mean_error_db": -0.0691549357685659,
+        "max_block_peak_to_peak_db": 0.0960702879902513,
+        "max_block_std_db": 0.039424360142253916,
+        "min_snr_db": 17.778710071885964
+      },
+      {
+        "expected_input_dbm": -25.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.49228706591655325,
+        "mean_error_db": 0.0179814649374221,
+        "max_block_peak_to_peak_db": 0.09922889864618867,
+        "max_block_std_db": 0.0379782029082296,
+        "min_snr_db": 41.27277184165625
+      },
+      {
+        "expected_input_dbm": -35.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.6886367704587499,
+        "mean_error_db": -0.5052071459190036,
+        "max_block_peak_to_peak_db": 0.10292754291225492,
+        "max_block_std_db": 0.043290468621141456,
+        "min_snr_db": 31.54931893262801
+      },
+      {
+        "expected_input_dbm": -20.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.9862815008586736,
+        "mean_error_db": 0.3492969131601853,
+        "max_block_peak_to_peak_db": 0.11492563845636816,
+        "max_block_std_db": 0.05044833443685556,
+        "min_snr_db": 46.663607092583284
+      },
+      {
+        "expected_input_dbm": -40.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.675341309218183,
+        "mean_error_db": -0.26672967491167365,
+        "max_block_peak_to_peak_db": 0.22648327394924905,
+        "max_block_std_db": 0.08687639922603385,
+        "min_snr_db": 24.375569233591456
+      },
+      {
+        "expected_input_dbm": -50.0,
+        "points": 11,
+        "all_pass": true,
+        "max_abs_error_db": 0.43943117919750563,
+        "mean_error_db": 0.04078465604383361,
+        "max_block_peak_to_peak_db": 0.25438943548349613,
+        "max_block_std_db": 0.10654469423582284,
+        "min_snr_db": 15.062957346426689
+      }
+    ],
+    "gain_comparison": [
+      {
+        "gain_index": 0,
+        "one_point_offset_db": 11.857751834516932,
+        "calibration_anchor_usable": true,
+        "passing_input_levels_dbm": [
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "weakest_input_snr_db": 8.62033029245937,
+        "strongest_input_tone_dbfs": -21.85068345830463
+      },
+      {
+        "gain_index": 10,
+        "one_point_offset_db": 3.0327779791352967,
+        "calibration_anchor_usable": true,
+        "passing_input_levels_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "weakest_input_snr_db": 17.54122381502968,
+        "strongest_input_tone_dbfs": -12.655499636442759
+      },
+      {
+        "gain_index": 20,
+        "one_point_offset_db": -6.823642722734633,
+        "calibration_anchor_usable": true,
+        "passing_input_levels_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0,
+          -15.0,
+          -10.0
+        ],
+        "weakest_input_snr_db": 22.4814268508175,
+        "strongest_input_tone_dbfs": -2.6675615419826593
+      },
+      {
+        "gain_index": 30,
+        "one_point_offset_db": -18.821848534177814,
+        "calibration_anchor_usable": true,
+        "passing_input_levels_dbm": [
+          -50.0,
+          -45.0,
+          -40.0,
+          -35.0,
+          -30.0,
+          -25.0,
+          -20.0
+        ],
+        "weakest_input_snr_db": 25.477700011501334,
+        "strongest_input_tone_dbfs": 1.6530864378819634
+      },
+      {
+        "gain_index": 40,
+        "one_point_offset_db": -28.14616256757651,
+        "calibration_anchor_usable": false,
+        "passing_input_levels_dbm": [],
+        "weakest_input_snr_db": 25.58685347016183,
+        "strongest_input_tone_dbfs": 1.6544442948397347
+      },
+      {
+        "gain_index": 50,
+        "one_point_offset_db": -31.48563665600939,
+        "calibration_anchor_usable": false,
+        "passing_input_levels_dbm": [],
+        "weakest_input_snr_db": 29.74532007750998,
+        "strongest_input_tone_dbfs": 1.6546753477676805
+      },
+      {
+        "gain_index": 60,
+        "one_point_offset_db": -31.650232059806555,
+        "calibration_anchor_usable": false,
+        "passing_input_levels_dbm": [],
+        "weakest_input_snr_db": 37.7759706597774,
+        "strongest_input_tone_dbfs": 1.6539899148005555
+      },
+      {
+        "gain_index": 70,
+        "one_point_offset_db": -31.650003979994516,
+        "calibration_anchor_usable": false,
+        "passing_input_levels_dbm": [],
+        "weakest_input_snr_db": 38.57035684404544,
+        "strongest_input_tone_dbfs": 1.644384113125073
+      },
+      {
+        "gain_index": 80,
+        "one_point_offset_db": -31.63169672866549,
+        "calibration_anchor_usable": false,
+        "passing_input_levels_dbm": [],
+        "weakest_input_snr_db": 36.74878217861793,
+        "strongest_input_tone_dbfs": 1.6361835481260987
+      }
+    ],
+    "extended_power_results": [
+      {
+        "expected_input_dbm": -30.0,
+        "passing_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "passing_intervals_mhz": [
+          [
+            2200,
+            2600
+          ]
+        ],
+        "reliable_tone_frequencies_mhz": [
+          2000,
+          2050,
+          2100,
+          2150,
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650,
+          2700,
+          2750
+        ],
+        "unreliable_frequencies_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "max_reliable_block_peak_to_peak_db": 0.09940280853220429
+      },
+      {
+        "expected_input_dbm": -15.0,
+        "passing_frequencies_mhz": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "passing_intervals_mhz": [
+          [
+            2200,
+            2600
+          ]
+        ],
+        "reliable_tone_frequencies_mhz": [
+          2000,
+          2050,
+          2100,
+          2150,
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600,
+          2650,
+          2700,
+          2750
+        ],
+        "unreliable_frequencies_mhz": [
+          2800,
+          2850,
+          2900,
+          2950
+        ],
+        "max_reliable_block_peak_to_peak_db": 0.07067854855938727
+      }
+    ],
+    "extended_joint_passing_intervals_mhz": [
+      [
+        2200,
+        2600
+      ]
+    ]
+  },
+  "phase2": {
+    "gain_index": 80,
+    "attenuator_db": 50,
+    "interpretation": "Setup-limited known-frequency CW thresholds, not intrinsic receiver or Wi-Fi sensitivity; see ADC/background diagnostics at 2460 MHz.",
+    "profile": [
+      80000000,
+      0,
+      2048,
+      14,
+      30
+    ],
+    "snr_threshold_db": 15,
+    "minimum_on_off_excess_db": 10,
+    "required_captures": 3,
+    "bands": [
+      {
+        "band": "2400-2500 MHz / 10 MHz",
+        "requested_frequencies": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "confirmed_frequencies": 11,
+        "best_dbm": -79.0,
+        "worst_dbm": -53.0,
+        "median_dbm": -74.0
+      },
+      {
+        "band": "2200-2600 MHz / 50 MHz",
+        "requested_frequencies": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "confirmed_frequencies": 9,
+        "best_dbm": -85.0,
+        "worst_dbm": -73.0,
+        "median_dbm": -79.0
+      }
+    ],
+    "sensitivity": [
+      {
+        "rf_mhz": 2200,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -81.0,
+        "last_weaker_failed_dbm": -82.0,
+        "generator_at_sensitivity_dbm": -31.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 19.329133839384916,
+        "min_on_off_excess_db": 10.03402998779138,
+        "max_block_peak_to_peak_db": 0.3152784771141519,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2250,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -82.0,
+        "last_weaker_failed_dbm": -83.0,
+        "generator_at_sensitivity_dbm": -32.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.692261901947635,
+        "min_on_off_excess_db": 10.361137725517331,
+        "max_block_peak_to_peak_db": 0.16826948867837643,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2300,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -73.0,
+        "last_weaker_failed_dbm": -74.0,
+        "generator_at_sensitivity_dbm": -23.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 28.63102828540825,
+        "min_on_off_excess_db": 11.004762774632864,
+        "max_block_peak_to_peak_db": 0.18928162163831175,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2350,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -84.0,
+        "last_weaker_failed_dbm": -85.0,
+        "generator_at_sensitivity_dbm": -34.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 16.912505094046857,
+        "min_on_off_excess_db": 13.55489620759725,
+        "max_block_peak_to_peak_db": 0.16262595828838755,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2400,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -79.0,
+        "last_weaker_failed_dbm": -80.0,
+        "generator_at_sensitivity_dbm": -29.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 17.291564089072267,
+        "min_on_off_excess_db": 10.604499002794775,
+        "max_block_peak_to_peak_db": 0.3572858359258895,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2410,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.020614894447446,
+        "min_on_off_excess_db": 14.54455812402232,
+        "max_block_peak_to_peak_db": 1.1227156511596394,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2420,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -71.0,
+        "last_weaker_failed_dbm": -72.0,
+        "generator_at_sensitivity_dbm": -21.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 16.886739844724698,
+        "min_on_off_excess_db": 18.68598171312737,
+        "max_block_peak_to_peak_db": 1.7974106021851757,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2430,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -76.0,
+        "last_weaker_failed_dbm": -77.0,
+        "generator_at_sensitivity_dbm": -26.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.552843859257592,
+        "min_on_off_excess_db": 18.18311716309093,
+        "max_block_peak_to_peak_db": 1.5620928508012266,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2440,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -75.0,
+        "last_weaker_failed_dbm": -76.0,
+        "generator_at_sensitivity_dbm": -25.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.95560594353495,
+        "min_on_off_excess_db": 15.197981675043836,
+        "max_block_peak_to_peak_db": 2.0208955126096253,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2450,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -76.0,
+        "last_weaker_failed_dbm": -77.0,
+        "generator_at_sensitivity_dbm": -26.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.88082998538719,
+        "min_on_off_excess_db": 18.0866665674773,
+        "max_block_peak_to_peak_db": 2.629346794792651,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2460,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -53.0,
+        "last_weaker_failed_dbm": -54.0,
+        "generator_at_sensitivity_dbm": -3.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.717560806026514,
+        "min_on_off_excess_db": 13.879570152825574,
+        "max_block_peak_to_peak_db": 2.633909714936777,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2470,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -67.0,
+        "last_weaker_failed_dbm": -68.0,
+        "generator_at_sensitivity_dbm": -17.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.860050605007237,
+        "min_on_off_excess_db": 19.840036114675666,
+        "max_block_peak_to_peak_db": 2.9125813400248006,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2480,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -71.0,
+        "last_weaker_failed_dbm": -72.0,
+        "generator_at_sensitivity_dbm": -21.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.475993047640753,
+        "min_on_off_excess_db": 10.526141129725142,
+        "max_block_peak_to_peak_db": 2.4132042059567365,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2490,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -78.0,
+        "last_weaker_failed_dbm": -79.0,
+        "generator_at_sensitivity_dbm": -28.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.153842200266826,
+        "min_on_off_excess_db": 18.72058191055806,
+        "max_block_peak_to_peak_db": 1.8493161913947027,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2500,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 17.647702296118926,
+        "min_on_off_excess_db": 11.664008759268754,
+        "max_block_peak_to_peak_db": 2.0386954403366264,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2550,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -85.0,
+        "last_weaker_failed_dbm": -86.0,
+        "generator_at_sensitivity_dbm": -35.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.150891389026151,
+        "min_on_off_excess_db": 15.315970831270088,
+        "max_block_peak_to_peak_db": 0.15187768975771476,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2600,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 21.026595603217416,
+        "min_on_off_excess_db": 10.701986470357316,
+        "max_block_peak_to_peak_db": 0.6079973051985057,
+        "source_floor_censored": false
+      }
+    ],
+    "sessions": [
+      {
+        "phase": "frequency_controls",
+        "points": 17,
+        "finished": true,
+        "source_enabled": false,
+        "started_utc": "2026-10-21T13:14:30.589094+00:00"
+      },
+      {
+        "phase": "frequency_thresholds",
+        "points": 153,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:15:47.175914+00:00"
+      },
+      {
+        "phase": "gain_controls",
+        "points": 10,
+        "finished": true,
+        "source_enabled": false,
+        "started_utc": "2026-10-21T13:10:40.785423+00:00"
+      },
+      {
+        "phase": "gain_extension",
+        "points": 90,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:05:31.643211+00:00"
+      },
+      {
+        "phase": "lower_gain_threshold",
+        "points": 16,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:37:21.493911+00:00"
+      },
+      {
+        "phase": "overload_controls",
+        "points": 4,
+        "finished": true,
+        "source_enabled": false,
+        "started_utc": "2026-10-21T13:33:45.308000+00:00"
+      },
+      {
+        "phase": "overload_gain_check",
+        "points": 32,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:34:05.702076+00:00"
+      },
+      {
+        "phase": "recheck_f2350",
+        "points": 3,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:29:09.748396+00:00"
+      },
+      {
+        "phase": "recheck_f2420",
+        "points": 10,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:29:25.836006+00:00"
+      },
+      {
+        "phase": "recheck_f2430",
+        "points": 4,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:30:03.216928+00:00"
+      },
+      {
+        "phase": "recheck_f2450",
+        "points": 3,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:30:22.211034+00:00"
+      },
+      {
+        "phase": "recheck_f2460",
+        "points": 4,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:30:38.355623+00:00"
+      },
+      {
+        "phase": "recheck_f2470",
+        "points": 12,
+        "finished": true,
+        "source_enabled": true,
+        "started_utc": "2026-10-21T13:30:57.384317+00:00"
+      }
+    ],
+    "fixed_gain80_bands": [
+      {
+        "band": "2400-2500 MHz / 10 MHz",
+        "requested_frequencies": [
+          2400,
+          2410,
+          2420,
+          2430,
+          2440,
+          2450,
+          2460,
+          2470,
+          2480,
+          2490,
+          2500
+        ],
+        "confirmed_frequencies": 11,
+        "best_dbm": -79.0,
+        "worst_dbm": -53.0,
+        "median_dbm": -74.0
+      },
+      {
+        "band": "2200-2600 MHz / 50 MHz",
+        "requested_frequencies": [
+          2200,
+          2250,
+          2300,
+          2350,
+          2400,
+          2450,
+          2500,
+          2550,
+          2600
+        ],
+        "confirmed_frequencies": 9,
+        "best_dbm": -85.0,
+        "worst_dbm": -73.0,
+        "median_dbm": -79.0
+      }
+    ],
+    "fixed_gain80_sensitivity": [
+      {
+        "rf_mhz": 2200,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -81.0,
+        "last_weaker_failed_dbm": -82.0,
+        "generator_at_sensitivity_dbm": -31.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 19.329133839384916,
+        "min_on_off_excess_db": 10.03402998779138,
+        "max_block_peak_to_peak_db": 0.3152784771141519,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2250,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -82.0,
+        "last_weaker_failed_dbm": -83.0,
+        "generator_at_sensitivity_dbm": -32.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.692261901947635,
+        "min_on_off_excess_db": 10.361137725517331,
+        "max_block_peak_to_peak_db": 0.16826948867837643,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2300,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -73.0,
+        "last_weaker_failed_dbm": -74.0,
+        "generator_at_sensitivity_dbm": -23.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 28.63102828540825,
+        "min_on_off_excess_db": 11.004762774632864,
+        "max_block_peak_to_peak_db": 0.18928162163831175,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2350,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -84.0,
+        "last_weaker_failed_dbm": -85.0,
+        "generator_at_sensitivity_dbm": -34.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 16.912505094046857,
+        "min_on_off_excess_db": 13.55489620759725,
+        "max_block_peak_to_peak_db": 0.16262595828838755,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2400,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -79.0,
+        "last_weaker_failed_dbm": -80.0,
+        "generator_at_sensitivity_dbm": -29.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 17.291564089072267,
+        "min_on_off_excess_db": 10.604499002794775,
+        "max_block_peak_to_peak_db": 0.3572858359258895,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2410,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.020614894447446,
+        "min_on_off_excess_db": 14.54455812402232,
+        "max_block_peak_to_peak_db": 1.1227156511596394,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2420,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -71.0,
+        "last_weaker_failed_dbm": -72.0,
+        "generator_at_sensitivity_dbm": -21.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 16.886739844724698,
+        "min_on_off_excess_db": 18.68598171312737,
+        "max_block_peak_to_peak_db": 1.7974106021851757,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2430,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -76.0,
+        "last_weaker_failed_dbm": -77.0,
+        "generator_at_sensitivity_dbm": -26.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.552843859257592,
+        "min_on_off_excess_db": 18.18311716309093,
+        "max_block_peak_to_peak_db": 1.5620928508012266,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2440,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -75.0,
+        "last_weaker_failed_dbm": -76.0,
+        "generator_at_sensitivity_dbm": -25.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.95560594353495,
+        "min_on_off_excess_db": 15.197981675043836,
+        "max_block_peak_to_peak_db": 2.0208955126096253,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2450,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -76.0,
+        "last_weaker_failed_dbm": -77.0,
+        "generator_at_sensitivity_dbm": -26.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.88082998538719,
+        "min_on_off_excess_db": 18.0866665674773,
+        "max_block_peak_to_peak_db": 2.629346794792651,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2460,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -53.0,
+        "last_weaker_failed_dbm": -54.0,
+        "generator_at_sensitivity_dbm": -3.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.717560806026514,
+        "min_on_off_excess_db": 13.879570152825574,
+        "max_block_peak_to_peak_db": 2.633909714936777,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2470,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -67.0,
+        "last_weaker_failed_dbm": -68.0,
+        "generator_at_sensitivity_dbm": -17.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.860050605007237,
+        "min_on_off_excess_db": 19.840036114675666,
+        "max_block_peak_to_peak_db": 2.9125813400248006,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2480,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -71.0,
+        "last_weaker_failed_dbm": -72.0,
+        "generator_at_sensitivity_dbm": -21.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 18.475993047640753,
+        "min_on_off_excess_db": 10.526141129725142,
+        "max_block_peak_to_peak_db": 2.4132042059567365,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2490,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -78.0,
+        "last_weaker_failed_dbm": -79.0,
+        "generator_at_sensitivity_dbm": -28.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.153842200266826,
+        "min_on_off_excess_db": 18.72058191055806,
+        "max_block_peak_to_peak_db": 1.8493161913947027,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2500,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 17.647702296118926,
+        "min_on_off_excess_db": 11.664008759268754,
+        "max_block_peak_to_peak_db": 2.0386954403366264,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2550,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -85.0,
+        "last_weaker_failed_dbm": -86.0,
+        "generator_at_sensitivity_dbm": -35.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 15.150891389026151,
+        "min_on_off_excess_db": 15.315970831270088,
+        "max_block_peak_to_peak_db": 0.15187768975771476,
+        "source_floor_censored": false
+      },
+      {
+        "rf_mhz": 2600,
+        "gain_index": 80,
+        "confirmed_sensitivity_dbm": -74.0,
+        "last_weaker_failed_dbm": -75.0,
+        "generator_at_sensitivity_dbm": -24.0,
+        "passing_captures": 3,
+        "min_block_snr_db": 21.026595603217416,
+        "min_on_off_excess_db": 10.701986470357316,
+        "max_block_peak_to_peak_db": 0.6079973051985057,
+        "source_floor_censored": false
+      }
+    ],
+    "alternative_gain_results": [
+      {
+        "rf_mhz": 2460,
+        "gain_index": 70,
+        "confirmed_sensitivity_dbm": null,
+        "last_weaker_failed_dbm": -50.0,
+        "generator_at_sensitivity_dbm": null,
+        "passing_captures": 0,
+        "min_block_snr_db": null,
+        "min_on_off_excess_db": null,
+        "max_block_peak_to_peak_db": null,
+        "source_floor_censored": false
+      }
+    ],
+    "complete": true
+  }
+}
